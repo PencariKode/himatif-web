@@ -4,8 +4,8 @@
 
 | Nama Branch | Tipe / Lingkup | Status | Keterangan |
 | :--- | :--- | :--- | :--- |
-| `main` | Production | Aktif | Branch utama / versi stabil aplikasi (terintegrasi fitur Navbar & Hero Section). |
-| `home/hero-navbar` | Testing / Feature | Merged | Selesai dan berhasil dimerge ke branch `main`. |
+| `main` | Production | Aktif | Branch utama / versi stabil aplikasi (terintegrasi fitur Navbar & Hero Section secara lokal). |
+| `home/hero-navbar` | Testing / Feature | Pushed / Ready for PR | Dimerge lokal ke `main` dan dipush ke `origin/home/hero-navbar` untuk Pull Request. |
 
 ---
 
@@ -18,4 +18,4 @@
 - **Component - Navbar**: Ekstraksi dan pembuatan komponen modular `src/components/Navbar.tsx` (desain responsif, mobile menu hamburger, Biru Royal `#1D4ED8`, tanpa emoji OS/gradient text).
 - **Component - Hero Section**: Ekstraksi dan pembuatan komponen modular `src/components/HeroSection.tsx` (layout 2 kolom, supertitle sesuai format DESIGN_4.md, floating stats card dengan ikon Lucide `Users`).
 - **Page Integration**: Penggabungan komponen `Navbar` dan `HeroSection` ke dalam `src/app/page.js`.
-- **Git Flow**: Merge branch `home/hero-navbar` ke `main` dan sinkronisasi ke remote repository `origin/main`.
+- **Git Flow**: Merge branch `home/hero-navbar` ke branch `main` secara lokal. Branch `home/hero-navbar` telah dipush ke remote `origin` untuk proses Pull Request (branch `main` diproteksi oleh GitHub branch rules).
