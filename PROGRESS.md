@@ -6,7 +6,7 @@
 | :--- | :--- | :--- | :--- |
 | `main` | Production | Aktif | Branch utama / versi stabil aplikasi (terintegrasi fitur Navbar & Hero Section secara lokal). |
 | `home/hero-navbar` | Testing / Feature | Pushed / Ready for PR | Dimerge lokal ke `main` dan dipush ke `origin/home/hero-navbar` untuk Pull Request. |
-| `home/about-section` | Testing / Feature | Aktif / In Progress | Pembuatan komponen `AboutSection.tsx` dan integrasi ke `src/app/page.tsx`. |
+| `home/about-section` | Testing / Feature | Aktif / In Progress | Pembuatan komponen `AboutSection.tsx`, perbaikan relative imports, dan integrasi ke `src/app/page.tsx`. |
 
 ---
 
@@ -23,3 +23,4 @@
 - **Branch Creation**: Pembuatan branch baru `home/about-section` dari `main`.
 - **Component - About Section**: Pembuatan komponen `src/components/AboutSection.tsx` (supertitle, judul 'Tentang HIMATIF', deskripsi singkat himpunan, serta 3 kartu Visi, Misi, dan Tujuan dengan ikon `Compass`, `Target`, `Award` dari `lucide-react` sesuai aturan desain KEMAKOM).
 - **Page Update**: Migrasi dan integrasi `AboutSection` di bawah `HeroSection` pada `src/app/page.tsx`.
+- **Bugfix & Import Refactor**: Mengubah import path komponen pada `src/app/page.tsx` dari path alias `@/components/...` menjadi relative path (`../components/...`) untuk memastikan resolusi modul aman dan bebas error pada server dev/build.
