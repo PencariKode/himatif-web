@@ -2,25 +2,265 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #132347;
+
+  /* PRIMARY / NAVY */
+  --tif-primary: #132347;
+  --tif-primary-50: #eff7ff;
+  --tif-primary-100: #dbedfe;
+  --tif-primary-200: #bfe0fe;
+  --tif-primary-300: #92cdfe;
+  --tif-primary-400: #5fb1fb;
+  --tif-primary-500: #3a91f7;
+  --tif-primary-600: #2472ec;
+  --tif-primary-700: #1c5cd9;
+  --tif-primary-800: #1d4bb0;
+  --tif-primary-900: #1d428b;
+  --tif-primary-950: #132347;
+
+  /* SECONDARY / YELLOW */
+  --tif-secondary: #f6b61c;
+  --tif-secondary-50: #fffbeb;
+  --tif-secondary-100: #fdf2c8;
+  --tif-secondary-200: #fbe38c;
+  --tif-secondary-300: #f8ce51;
+  --tif-secondary-400: #f6b61c;
+  --tif-secondary-500: #f09910;
+  --tif-secondary-600: #d5740a;
+  --tif-secondary-700: #b0510d;
+  --tif-secondary-800: #8f3f11;
+  --tif-secondary-900: #763411;
+  --tif-secondary-950: #441904;
+
+  /* ACCENT CREAM */
+  --tif-acc-cream: #fff8ea;
+  --tif-acc-cream-50: #fff8ea;
+  --tif-acc-cream-100: #feecc7;
+  --tif-acc-cream-200: #fdd78a;
+  --tif-acc-cream-300: #fcbc4d;
+  --tif-acc-cream-400: #fba224;
+  --tif-acc-cream-500: #f57f0b;
+  --tif-acc-cream-600: #d95b06;
+  --tif-acc-cream-700: #b43c09;
+  --tif-acc-cream-800: #922e0e;
+  --tif-acc-cream-900: #78270f;
+  --tif-acc-cream-950: #451103;
+
+  /* ACCENT BLUESKY */
+  --tif-acc-bluesky: #cfe3f5;
+  --tif-acc-bluesky-50: #f2f7fc;
+  --tif-acc-bluesky-100: #e1edf8;
+  --tif-acc-bluesky-200: #cfe3f5;
+  --tif-acc-bluesky-300: #a4ccec;
+  --tif-acc-bluesky-400: #79b0e1;
+  --tif-acc-bluesky-500: #5994d8;
+  --tif-acc-bluesky-600: #457acb;
+  --tif-acc-bluesky-700: #3b67ba;
+  --tif-acc-bluesky-800: #355498;
+  --tif-acc-bluesky-900: #2f4879;
+  --tif-acc-bluesky-950: #212e4a;
+
+  /* ACCENT SLATE */
+  --tif-acc-slate: #8c96ac;
+  --tif-acc-slate-50: #f5f7f8;
+  --tif-acc-slate-100: #ecf0f3;
+  --tif-acc-slate-200: #dde3e8;
+  --tif-acc-slate-300: #c7d1da;
+  --tif-acc-slate-400: #b0bcc9;
+  --tif-acc-slate-500: #9ba7b9;
+  --tif-acc-slate-600: #8c96ac;
+  --tif-acc-slate-700: #717a91;
+  --tif-acc-slate-800: #5d6576;
+  --tif-acc-slate-900: #4f5560;
+  --tif-acc-slate-950: #2e3138;
+
+  /* ACCENT INDIGO */
+  --tif-acc-indigo: #2b3b63;
+  --tif-acc-indigo-50: #f2f7fc;
+  --tif-acc-indigo-100: #e2ecf7;
+  --tif-acc-indigo-200: #cbddf2;
+  --tif-acc-indigo-300: #a7c8e9;
+  --tif-acc-indigo-400: #7eabdc;
+  --tif-acc-indigo-500: #5f8ed2;
+  --tif-acc-indigo-600: #4b74c5;
+  --tif-acc-indigo-700: #4162b4;
+  --tif-acc-indigo-800: #3a5193;
+  --tif-acc-indigo-900: #2b3b63;
+  --tif-acc-indigo-950: #232c48;
+
+  /* ACCENT SAND */
+  --tif-acc-sand: #ffd98a;
+  --tif-acc-sand-50: #fff9eb;
+  --tif-acc-sand-100: #ffecc6;
+  --tif-acc-sand-200: #ffd98a;
+  --tif-acc-sand-300: #ffbe4a;
+  --tif-acc-sand-400: #ffa520;
+  --tif-acc-sand-500: #f98107;
+  --tif-acc-sand-600: #dd5c02;
+  --tif-acc-sand-700: #b73d06;
+  --tif-acc-sand-800: #942f0c;
+  --tif-acc-sand-900: #7a270d;
+  --tif-acc-sand-950: #461102;
+
+  /* ACCENT CORAL */
+  --tif-acc-coral: #ff9270;
+  --tif-acc-coral-50: #fff4f1;
+  --tif-acc-coral-100: #ffe8e1;
+  --tif-acc-coral-200: #ffd4c7;
+  --tif-acc-coral-300: #ffb7a0;
+  --tif-acc-coral-400: #ff9270;
+  --tif-acc-coral-500: #f8683b;
+  --tif-acc-coral-600: #e54d1d;
+  --tif-acc-coral-700: #c13d14;
+  --tif-acc-coral-800: #a03514;
+  --tif-acc-coral-900: #843218;
+  --tif-acc-coral-950: #481607;
+}
+
+@theme {
+  /* HIMATIF COLOR */
+  --color-tif-bg: #ffffff;
+  --color-tif-bg-subtle: #fff8ea;
+  --color-tif-bg-highlight: #ff9270;
+  --color-tif-bg-inverse: #132347;
+  --color-tif-bg-inverse-soft: #2b3b63;
+  --color-tif-bg-accent: #f6b61c;
+  --color-tif-bg-accent-soft: #ffd98a;
+  --color-tif-bg-info: #cfe3f5;
+
+  --color-tif-text: #132347;
+  --color-tif-text-secondary: #2b3b63;
+  --color-tif-text-muted: #8c96ac;
+  --color-tif-text-inverse: #ffffff;
+  --color-tif-text-inverse-muted: #cfe3f5;
+  --color-tif-text-accent: #f6b61c;
+  --color-tif-text-on-accent: #132347;
+
+  --color-tif-border: #8c96ac;
+  --color-tif-border-strong: #132347;
+  --color-tif-border-accent: #f6b61c;
+
+  --color-tif-primary: #132347;
+  --color-tif-primary-50: #eff7ff;
+  --color-tif-primary-100: #dbedfe;
+  --color-tif-primary-200: #bfe0fe;
+  --color-tif-primary-300: #92cdfe;
+  --color-tif-primary-400: #5fb1fb;
+  --color-tif-primary-500: #3a91f7;
+  --color-tif-primary-600: #2472ec;
+  --color-tif-primary-700: #1c5cd9;
+  --color-tif-primary-800: #1d4bb0;
+  --color-tif-primary-900: #1d428b;
+  --color-tif-primary-950: #132347;
+
+  --color-tif-secondary: #f6b61c;
+  --color-tif-secondary-50: #fffbeb;
+  --color-tif-secondary-100: #fdf2c8;
+  --color-tif-secondary-200: #fbe38c;
+  --color-tif-secondary-300: #f8ce51;
+  --color-tif-secondary-400: #f6b61c;
+  --color-tif-secondary-500: #f09910;
+  --color-tif-secondary-600: #d5740a;
+  --color-tif-secondary-700: #b0510d;
+  --color-tif-secondary-800: #8f3f11;
+  --color-tif-secondary-900: #763411;
+  --color-tif-secondary-950: #441904;
+
+  /* ACCENT CREAM */
+  --color-tif-acc-cream: #fff8ea;
+  --color-tif-acc-cream-50: #fff8ea;
+  --color-tif-acc-cream-100: #feecc7;
+  --color-tif-acc-cream-200: #fdd78a;
+  --color-tif-acc-cream-300: #fcbc4d;
+  --color-tif-acc-cream-400: #fba224;
+  --color-tif-acc-cream-500: #f57f0b;
+  --color-tif-acc-cream-600: #d95b06;
+  --color-tif-acc-cream-700: #b43c09;
+  --color-tif-acc-cream-800: #922e0e;
+  --color-tif-acc-cream-900: #78270f;
+  --color-tif-acc-cream-950: #451103;
+
+  /* ACCENT BLUESKY */
+  --color-tif-acc-bluesky: #cfe3f5;
+  --color-tif-acc-bluesky-50: #f2f7fc;
+  --color-tif-acc-bluesky-100: #e1edf8;
+  --color-tif-acc-bluesky-200: #cfe3f5;
+  --color-tif-acc-bluesky-300: #a4ccec;
+  --color-tif-acc-bluesky-400: #79b0e1;
+  --color-tif-acc-bluesky-500: #5994d8;
+  --color-tif-acc-bluesky-600: #457acb;
+  --color-tif-acc-bluesky-700: #3b67ba;
+  --color-tif-acc-bluesky-800: #355498;
+  --color-tif-acc-bluesky-900: #2f4879;
+  --color-tif-acc-bluesky-950: #212e4a;
+
+  /* ACCENT SLATE */
+  --color-tif-acc-slate: #8c96ac;
+  --color-tif-acc-slate-50: #f5f7f8;
+  --color-tif-acc-slate-100: #ecf0f3;
+  --color-tif-acc-slate-200: #dde3e8;
+  --color-tif-acc-slate-300: #c7d1da;
+  --color-tif-acc-slate-400: #b0bcc9;
+  --color-tif-acc-slate-500: #9ba7b9;
+  --color-tif-acc-slate-600: #8c96ac;
+  --color-tif-acc-slate-700: #717a91;
+  --color-tif-acc-slate-800: #5d6576;
+  --color-tif-acc-slate-900: #4f5560;
+  --color-tif-acc-slate-950: #2e3138;
+
+  /* ACCENT INDIGO */
+  --color-tif-acc-indigo: #2b3b63;
+  --color-tif-acc-indigo-50: #f2f7fc;
+  --color-tif-acc-indigo-100: #e2ecf7;
+  --color-tif-acc-indigo-200: #cbddf2;
+  --color-tif-acc-indigo-300: #a7c8e9;
+  --color-tif-acc-indigo-400: #7eabdc;
+  --color-tif-acc-indigo-500: #5f8ed2;
+  --color-tif-acc-indigo-600: #4b74c5;
+  --color-tif-acc-indigo-700: #4162b4;
+  --color-tif-acc-indigo-800: #3a5193;
+  --color-tif-acc-indigo-900: #2b3b63;
+  --color-tif-acc-indigo-950: #232c48;
+
+  /* ACCENT SAND */
+  --color-tif-acc-sand: #ffd98a;
+  --color-tif-acc-sand-50: #fff9eb;
+  --color-tif-acc-sand-100: #ffecc6;
+  --color-tif-acc-sand-200: #ffd98a;
+  --color-tif-acc-sand-300: #ffbe4a;
+  --color-tif-acc-sand-400: #ffa520;
+  --color-tif-acc-sand-500: #f98107;
+  --color-tif-acc-sand-600: #dd5c02;
+  --color-tif-acc-sand-700: #b73d06;
+  --color-tif-acc-sand-800: #942f0c;
+  --color-tif-acc-sand-900: #7a270d;
+  --color-tif-acc-sand-950: #461102;
+
+  /* ACCENT CORAL */
+  --color-tif-acc-coral: #ff9270;
+  --color-tif-acc-coral-50: #fff4f1;
+  --color-tif-acc-coral-100: #ffe8e1;
+  --color-tif-acc-coral-200: #ffd4c7;
+  --color-tif-acc-coral-300: #ffb7a0;
+  --color-tif-acc-coral-400: #ff9270;
+  --color-tif-acc-coral-500: #f8683b;
+  --color-tif-acc-coral-600: #e54d1d;
+  --color-tif-acc-coral-700: #c13d14;
+  --color-tif-acc-coral-800: #a03514;
+  --color-tif-acc-coral-900: #843218;
+  --color-tif-acc-coral-950: #481607;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-background: #ffffff;
+  --color-foreground: #132347;
+  --font-sans: var(--font-poppins);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --breakpoint-xs: 30rem; /* 480px */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
