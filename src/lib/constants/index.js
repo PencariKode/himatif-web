@@ -15,7 +15,7 @@ export const HERO_STATS = [
   },
   {
     icon: "fa-regular fa-layer-group",
-    value: "6",
+    value: "9",
     labelDesktop: "Divisi",
     labelMobile: "Divisi",
   },

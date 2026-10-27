@@ -300,59 +300,230 @@ export const DIVISI_LIST = [
     ],
   },
   {
-    slug: "rohani",
-    name: "Rohani",
-    fullName: "Rohani Islam, Kristen & Buddha",
+    slug: "humas",
+    name: "Humas",
+    fullName: "Hubungan Masyarakat",
     bgClass: "bg-tif-acc-sand",
     dark: false,
     tagline:
-      "Menumbuhkan nilai spiritualitas, toleransi lintas agama, dan kepedulian sosial.",
+      "Menjalin relasi strategis, komunikasi eksternal, dan kolaborasi lintas organisasi.",
     aboutPrimary:
-      "Divisi Rohani menaungi kegiatan keagamaan mahasiswa Teknologi Informasi yang terdiri dari sub-bidang Rohani Islam, Rohani Kristen, dan Rohani Buddha.",
+      "Humas berperan sebagai wajah representatif dan penghubung utama HIMATIF USU dengan pihak program studi, fakultas, alumni, himpunan mahasiswa lain, serta instansi mitra di luar kampus.",
     aboutSecondary:
-      "Selain memfasilitasi ibadah dan pembinaan mental spiritual, divisi ini juga aktif menggerakkan aksi sosial dan kemanusiaan bagi sesama.",
+      "Melalui komunikasi yang proaktif dan diplomatis, divisi ini membuka peluang kolaborasi, studi banding, serta penyaluran aspirasi yang memperluas jejaring organisasi.",
     leaders: [
       { name: "Nama Lengkap", role: "KOORDINATOR DIVISI" },
       { name: "Nama Lengkap", role: "SEKRETARIS DIVISI" },
     ],
-    members: createMembers(9), // Total 11 orang (2 inti + 9 anggota)
-    defaultProgramId: "rohani-bakti-sosial",
+    members: createMembers(6), // Total 8 orang (2 inti + 6 anggota)
+    defaultProgramId: "humas-studi-banding",
     programs: [
       {
-        id: "rohani-ibadah-rutin",
-        title: "Kajian, Persekutuan & Kebaktian Rutin",
+        id: "humas-studi-banding",
+        title: "Studi Banding & Kunjungan Organisasi",
         descriptionDesktop:
-          "Kegiatan pembinaan iman dan diskusi kerohanian berkala sesuai agama masing-masing untuk memperkokoh akhlak dan karakter mahasiswa.",
+          "Kegiatan pertukaran wawasan manajemen organisasi dan kolaborasi program kerja bersama himpunan mahasiswa rumpun ilmu komputer dari berbagai perguruan tinggi.",
         descriptionMobile:
-          "Kegiatan pembinaan iman dan diskusi kerohanian berkala mahasiswa TI.",
-        tag: "Kerohanian · Berkala",
+          "Pertukaran wawasan dan kolaborasi bersama himpunan mahasiswa lintas kampus.",
+        tag: "Relasi · Tahunan",
       },
       {
-        id: "rohani-bakti-sosial",
-        title: "Bakti Sosial & Kunjungan Kasih",
+        id: "humas-temu-alumni",
+        title: "Forum Komunikasi & Temu Alumni TI",
         descriptionDesktop:
-          "Bentuk nyata pengabdian dan kepedulian mahasiswa Teknologi Informasi melalui penyaluran bantuan serta kunjungan ke panti asuhan dan masyarakat sekitar.",
+          "Wadah silaturahmi dan jejaring karier antara mahasiswa aktif dengan ikatan alumni Teknologi Informasi USU yang berkiprah di dunia industri.",
         descriptionMobile:
-          "Penyaluran bantuan sosial dan kunjungan ke panti asuhan bersama mahasiswa TI.",
+          "Wadah silaturahmi dan jejaring karier bersama alumni TI USU.",
+        tag: "Jejaring · Tahunan",
+      },
+      {
+        id: "humas-kemitraan-eksternal",
+        title: "Kemitraan Eksternal & Media Partner",
+        descriptionDesktop:
+          "Pengelolaan hubungan kerja sama kelembagaan, delegasi undangan resmi, serta kolaborasi media partner dengan komunitas dan instansi luar.",
+        descriptionMobile:
+          "Pengelolaan kerja sama kelembagaan dan delegasi resmi himpunan.",
+        tag: "Eksternal · Rutin",
+      },
+      {
+        id: "humas-aspirasi-mahasiswa",
+        title: "Penjaringan Aspirasi & Advokasi Mahasiswa",
+        descriptionDesktop:
+          "Penghimpunan masukan akademik maupun fasilitas perkuliahan mahasiswa TI USU untuk disampaikan secara konstruktif kepada pihak program studi dan fakultas.",
+        descriptionMobile:
+          "Penghimpunan aspirasi mahasiswa TI USU kepada program studi dan fakultas.",
+        tag: "Advokasi · Berkala",
+      },
+    ],
+  },
+  {
+    slug: "rohani-islam",
+    name: "Rohani Islam",
+    fullName: "Kerohanian Islam Mahasiswa TI",
+    bgClass: "bg-tif-acc-indigo",
+    dark: true,
+    tagline:
+      "Membina ukhuwah islamiyah, keimanan, dan akhlak mulia mahasiswa muslim TI USU.",
+    aboutPrimary:
+      "Rohani Islam merupakan wadah pembinaan spiritual, kajian keislaman, serta penguatan ukhuwah bagi mahasiswa muslim Teknologi Informasi USU.",
+    aboutSecondary:
+      "Melalui kegiatan mentoring, syiar kreatif, dan aksi kepedulian sosial, divisi ini membentuk pribadi mahasiswa yang unggul secara akademik sekaligus berakhlakul karimah.",
+    leaders: [
+      { name: "Nama Lengkap", role: "KOORDINATOR DIVISI" },
+      { name: "Nama Lengkap", role: "SEKRETARIS DIVISI" },
+    ],
+    members: createMembers(7), // Total 9 orang (2 inti + 7 anggota)
+    defaultProgramId: "rohis-gebyar-ramadhan",
+    programs: [
+      {
+        id: "rohis-kajian-mentoring",
+        title: "Kajian Rutin & Mentoring Keislaman",
+        descriptionDesktop:
+          "Lingkar diskusi keislaman, tilawah Al-Qur'an, dan pembinaan adab mahasiswa muslim TI USU agar tetap istiqamah di tengah kesibukan perkuliahan.",
+        descriptionMobile:
+          "Lingkar diskusi keislaman dan pembinaan spiritual mahasiswa muslim TI USU.",
+        tag: "Pembinaan · Mingguan",
+      },
+      {
+        id: "rohis-gebyar-ramadhan",
+        title: "Buka Puasa Bersama & Gebyar Ramadhan",
+        descriptionDesktop:
+          "Rangkaian kegiatan bulan suci Ramadhan meliputi buka puasa bersama lintas angkatan, tausiyah, serta pembagian takjil gratis kepada masyarakat.",
+        descriptionMobile:
+          "Buka puasa bersama lintas angkatan dan berbagi takjil di bulan Ramadhan.",
+        tag: "Syiar · Tahunan",
+      },
+      {
+        id: "rohis-phbi",
+        title: "Peringatan Hari Besar Islam (PHBI)",
+        descriptionDesktop:
+          "Penyelenggaraan kajian tematik dan syiar peringatan Maulid Nabi, Isra Mi'raj, serta Tahun Baru Islam di lingkungan Teknologi Informasi USU.",
+        descriptionMobile:
+          "Penyelenggaraan kajian tematik peringatan hari besar Islam.",
+        tag: "Keagamaan · Berkala",
+      },
+      {
+        id: "rohis-santunan-sosial",
+        title: "Santunan Anak Yatim & Bakti Sosial",
+        descriptionDesktop:
+          "Aksi kepedulian sosial melalui penggalangan infak dan penyaluran santunan ke panti asuhan bersama mahasiswa Teknologi Informasi.",
+        descriptionMobile:
+          "Penyaluran infak dan santunan ke panti asuhan bersama mahasiswa TI.",
         tag: "Sosial · Tahunan",
       },
+    ],
+  },
+  {
+    slug: "rohani-kristen",
+    name: "Rohani Kristen",
+    fullName: "Kerohanian Kristen Mahasiswa TI",
+    bgClass: "bg-tif-acc-coral",
+    dark: false,
+    tagline:
+      "Bertumbuh dalam iman, kasih persaudaraan, dan pelayanan bagi sesama.",
+    aboutPrimary:
+      "Rohani Kristen menjadi persekutuan yang mewadahi pertumbuhan iman, ibadah bersama, dan pelayanan kasih bagi mahasiswa Kristen dan Katolik di lingkungan Teknologi Informasi USU.",
+    aboutSecondary:
+      "Dengan semangat kekeluargaan dan pelayanan, divisi ini menghadirkan ruang saling menguatkan dalam perkuliahan maupun kehidupan sehari-hari.",
+    leaders: [
+      { name: "Nama Lengkap", role: "KOORDINATOR DIVISI" },
+      { name: "Nama Lengkap", role: "SEKRETARIS DIVISI" },
+    ],
+    members: createMembers(6), // Total 8 orang (2 inti + 6 anggota)
+    defaultProgramId: "rohkris-perayaan-natal",
+    programs: [
       {
-        id: "rohani-hari-besar",
-        title: "Peringatan Hari Besar Keagamaan",
+        id: "rohkris-kebaktian-jumat",
+        title: "Kebaktian & Persekutuan Doa Jumat",
         descriptionDesktop:
-          "Penyelenggaraan acara buka puasa bersama, perayaan Natal, serta kegiatan keagamaan lainnya untuk mempererat persaudaraan lintas angkatan.",
+          "Ibadah persekutuan rutin setiap minggu yang diisi dengan pujian, renungan firman Tuhan, serta doa syafaat bersama mahasiswa TI USU.",
         descriptionMobile:
-          "Penyelenggaraan perayaan hari besar keagamaan bersama keluarga besar TI USU.",
+          "Ibadah persekutuan rutin mingguan dan doa bersama mahasiswa TI USU.",
+        tag: "Persekutuan · Mingguan",
+      },
+      {
+        id: "rohkris-perayaan-natal",
+        title: "Perayaan Natal Keluarga Besar TI USU",
+        descriptionDesktop:
+          "Ibadah dan perayaan sukacita Natal bersama dosen, alumni, dan seluruh mahasiswa Kristen/Katolik Teknologi Informasi USU.",
+        descriptionMobile:
+          "Ibadah dan perayaan Natal bersama keluarga besar Teknologi Informasi USU.",
         tag: "Perayaan · Tahunan",
       },
       {
-        id: "rohani-donasi",
-        title: "HIMATIF Peduli & Penggalangan Dana",
+        id: "rohkris-retreat-paskah",
+        title: "Retreat & Ibadah Padang Paskah",
         descriptionDesktop:
-          "Gerakan tanggap darurat dan penggalangan donasi kemanusiaan ketika terjadi bencana alam maupun bagi warga kampus yang membutuhkan.",
+          "Kegiatan penyegaran rohani di alam terbuka untuk mempererat keakraban antarangkatan serta merayakan kebangkitan Kristus.",
         descriptionMobile:
-          "Gerakan penggalangan donasi kemanusiaan bagi sesama yang membutuhkan.",
-        tag: "Kemanusiaan · Insidental",
+          "Penyegaran rohani dan ibadah padang untuk mempererat keakraban antarangkatan.",
+        tag: "Pembinaan · Tahunan",
+      },
+      {
+        id: "rohkris-kunjungan-kasih",
+        title: "Kunjungan Kasih & Pelayanan Panti",
+        descriptionDesktop:
+          "Bentuk nyata pelayanan kasih melalui kunjungan, berbagi kebahagiaan, dan penyerahan bantuan kebutuhan pokok ke panti asuhan.",
+        descriptionMobile:
+          "Pelayanan kasih dan penyerahan bantuan ke panti asuhan.",
+        tag: "Pelayanan · Tahunan",
+      },
+    ],
+  },
+  {
+    slug: "rohani-buddha",
+    name: "Rohani Buddha",
+    fullName: "Kerohanian Buddha Mahasiswa TI",
+    bgClass: "bg-tif-acc-bluesky",
+    dark: false,
+    tagline:
+      "Mengamalkan nilai kebijaksanaan, cinta kasih universal, dan ketenangan batin.",
+    aboutPrimary:
+      "Rohani Buddha mewadahi mahasiswa Buddhis Teknologi Informasi USU dalam memperdalam pemahaman Dhamma, meditasi, serta mempererat persaudaraan se-Dhamma.",
+    aboutSecondary:
+      "Melalui praktik kebajikan dan aksi sosial kemanusiaan, divisi ini mendorong terciptanya keharmonisan, kedamaian, dan kepedulian terhadap sesama makhluk hidup.",
+    leaders: [
+      { name: "Nama Lengkap", role: "KOORDINATOR DIVISI" },
+      { name: "Nama Lengkap", role: "SEKRETARIS DIVISI" },
+    ],
+    members: createMembers(4), // Total 6 orang (2 inti + 4 anggota)
+    defaultProgramId: "rohbud-baksos-fangsen",
+    programs: [
+      {
+        id: "rohbud-dhammaclass",
+        title: "Dhammaclass & Diskusi Dhamma Rutin",
+        descriptionDesktop:
+          "Pertemuan berkala untuk mempelajari ajaran Buddha, berdiskusi seputar penerapan Dhamma dalam kehidupan kampus, serta mempererat Kalyanamitta.",
+        descriptionMobile:
+          "Pertemuan berkala untuk mempelajari dan mendiskusikan Dhamma dalam kehidupan kampus.",
+        tag: "Dhamma · Berkala",
+      },
+      {
+        id: "rohbud-baksos-fangsen",
+        title: "Bakti Sosial & Fangšen (Pelepasan Satwa)",
+        descriptionDesktop:
+          "Praktik nyata cinta kasih universal (Metta) melalui kegiatan bakti sosial kemanusiaan serta pelepasan satwa kembali ke habitat alaminya.",
+        descriptionMobile:
+          "Praktik cinta kasih melalui bakti sosial dan pelepasan satwa ke alam.",
+        tag: "Kebajikan · Tahunan",
+      },
+      {
+        id: "rohbud-waisak-kathina",
+        title: "Perayaan Tri Suci Waisak & Kathina",
+        descriptionDesktop:
+          "Partisipasi ibadah puja bakti dan perayaan hari besar agama Buddha bersama komunitas mahasiswa Buddhis di lingkungan USU.",
+        descriptionMobile:
+          "Puja bakti dan perayaan hari besar agama Buddha bersama mahasiswa Buddhis USU.",
+        tag: "Keagamaan · Tahunan",
+      },
+      {
+        id: "rohbud-meditasi",
+        title: "Sesi Meditasi & Mindfulness Mahasiswa",
+        descriptionDesktop:
+          "Latihan ketenangan batin dan kesadaran penuh (mindfulness) untuk membantu mahasiswa mengelola stres serta meningkatkan fokus belajar.",
+        descriptionMobile:
+          "Latihan ketenangan batin dan mindfulness untuk meningkatkan fokus belajar.",
+        tag: "Pembinaan · Berkala",
       },
     ],
   },
