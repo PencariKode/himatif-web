@@ -12,12 +12,12 @@ export default function Gallery() {
       />
 
       {/* Desktop Bento Grid (9 Cards, 15-col ratio 5:7:3, 3:5:7, 5:5:5) */}
-      <div className="hidden md:grid md:grid-cols-15 gap-6 mt-12 w-full">
+      <div className="hidden md:grid md:grid-cols-15 gap-4 lg:gap-5 mt-10 w-full">
         {GALLERY_DESKTOP_ITEMS.map((item, idx) => (
           <ImagePlaceholder
             key={idx}
             dark={item.dark}
-            className={`${item.bgClass} ${item.colSpan} h-64 lg:h-72 rounded-3xl`}
+            className={`${item.bgClass} ${item.colSpan} h-48 lg:h-56 rounded-2xl`}
           />
         ))}
       </div>

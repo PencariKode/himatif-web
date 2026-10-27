@@ -11,19 +11,19 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full bg-tif-bg px-5 sm:px-8 md:px-14 lg:px-24 py-5">
-        <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
+      <header className="w-full bg-tif-bg px-5 sm:px-8 md:px-12 lg:px-20 py-4">
+        <div className="w-full max-w-5xl mx-auto flex items-center justify-between">
           <BrandLogo />
 
           <nav
             aria-label="Main Navigation"
-            className="hidden md:flex items-center gap-7 lg:gap-10"
+            className="hidden md:flex items-center gap-6 lg:gap-8"
           >
             {NAV_LINKS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-tif-text hover:text-tif-secondary transition-colors"
+                className="text-xs lg:text-[13px] font-medium text-tif-text hover:text-tif-secondary transition-colors"
               >
                 {item.label}
               </a>

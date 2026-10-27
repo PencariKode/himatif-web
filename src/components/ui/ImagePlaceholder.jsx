@@ -1,12 +1,12 @@
 export default function ImagePlaceholder({
   dark = false,
   className = "",
-  iconClassName = "text-3xl md:text-4xl",
+  iconClassName = "text-2xl md:text-3xl",
   children,
 }) {
   return (
     <div
-      className={`relative flex items-center justify-center overflow-hidden rounded-2xl md:rounded-3xl ${className}`}
+      className={`relative flex items-center justify-center overflow-hidden rounded-2xl ${className}`}
     >
       <i
         className={`fa-regular fa-image select-none pointer-events-none ${iconClassName} ${
