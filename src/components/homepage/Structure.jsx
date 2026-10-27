@@ -10,17 +10,17 @@ import { SectionContainer, SectionHeader } from "@c/ui/SectionWrapper";
 function BphCard({ name, role, className = "" }) {
   return (
     <div
-      className={`bg-tif-bg rounded-2xl p-3.5 md:p-4 flex flex-row md:flex-col items-center md:items-stretch gap-3.5 ${className}`}
+      className={`bg-tif-bg rounded-2xl overflow-hidden p-0 md:p-4 flex flex-col items-stretch md:gap-3.5 shadow-[0_4px_20px_rgba(19,35,71,0.04)] md:shadow-none ${className}`}
     >
       <ImagePlaceholder
-        className="w-20 h-20 md:w-full md:h-auto md:aspect-[4/3.4] bg-tif-acc-bluesky rounded-xl shrink-0"
+        className="w-full aspect-[4/3.6] md:aspect-[4/3.4] bg-tif-acc-bluesky rounded-none md:rounded-xl shrink-0"
         iconClassName="text-2xl"
       />
-      <div className="flex flex-col gap-0.5 md:pt-0.5">
-        <h4 className="text-base md:text-sm lg:text-base font-bold text-tif-text leading-snug">
+      <div className="flex flex-col gap-0.5 p-3 sm:p-3.5 md:p-0 md:pt-0.5">
+        <h4 className="text-xs sm:text-sm md:text-sm lg:text-base font-bold text-tif-text leading-snug truncate">
           {name}
         </h4>
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-tif-text-muted">
+        <span className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-wide md:tracking-wider text-tif-text-muted leading-tight">
           {role}
         </span>
       </div>
@@ -77,32 +77,32 @@ export default function Structure() {
           Badan Pengurus Harian (BPH)
         </h3>
 
-        <div className="flex flex-col gap-3.5 md:gap-6 w-full">
+        <div className="flex flex-col gap-3 sm:gap-4 md:gap-6 w-full">
           {/* Top Row: Ketua & Wakil Ketua */}
-          <div className="flex flex-col md:flex-row justify-center gap-3.5 md:gap-5 w-full">
+          <div className="flex flex-row justify-center gap-3 sm:gap-4 md:gap-5 w-full">
             {BPH_TOP_MEMBERS.map((member) => (
               <BphCard
                 key={member.role}
                 name={member.name}
                 role={member.role}
-                className="w-full md:w-[calc(50%-10px)] lg:w-[270px]"
+                className="flex-1 md:flex-initial md:w-[calc(50%-10px)] lg:w-[270px]"
               />
             ))}
           </div>
 
           {/* Bottom Row: Sekretaris Group & Bendahara Group */}
-          <div className="flex flex-col lg:flex-row justify-between gap-3.5 lg:gap-10 w-full">
+          <div className="flex flex-col lg:flex-row justify-between gap-3 sm:gap-4 lg:gap-10 w-full">
             {BPH_BOTTOM_GROUPS.map((group, groupIdx) => (
               <div
                 key={groupIdx}
-                className="flex flex-col md:flex-row gap-3.5 md:gap-5 w-full lg:w-[46%]"
+                className="flex flex-row gap-3 sm:gap-4 md:gap-5 w-full lg:w-[46%]"
               >
                 {group.map((member) => (
                   <BphCard
                     key={member.role}
                     name={member.name}
                     role={member.role}
-                    className="w-full md:flex-1"
+                    className="flex-1"
                   />
                 ))}
               </div>
