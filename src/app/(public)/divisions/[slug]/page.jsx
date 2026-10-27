@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { DIVISI_LIST } from "@l/constants";
+import { DIVISI_LIST } from "@l/constants/division";
 import EventAccordion from "@c/ui/EventAccordion";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import MemberCard from "@c/ui/MemberCard";

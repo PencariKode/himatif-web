@@ -1,9 +1,6 @@
 import Link from "next/link";
-import {
-  BPH_BOTTOM_GROUPS,
-  BPH_TOP_MEMBERS,
-  DIVISI_LIST,
-} from "@l/constants";
+import { BPH_BOTTOM_GROUPS, BPH_TOP_MEMBERS } from "@l/constants";
+import { DIVISI_LIST } from "@l/constants/division";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import MemberCard from "@c/ui/MemberCard";
 import { SectionContainer, SectionHeader } from "@c/ui/SectionWrapper";

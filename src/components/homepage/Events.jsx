@@ -1,4 +1,4 @@
-import { EVENT_LIST } from "@l/constants";
+import { EVENT_LIST } from "@l/constants/event";
 import EventAccordion from "@c/ui/EventAccordion";
 import { SectionContainer, SectionHeader } from "@c/ui/SectionWrapper";
 
