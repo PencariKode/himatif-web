@@ -1,13 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { NAV_LINKS } from "@l/constants";
 import BrandLogo from "@c/ui/BrandLogo";
 import { CircleIconButton, CtaPillButton } from "@c/ui/Buttons";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeHref, setActiveHref] = useState("#struktur");
+  const [activeHref, setActiveHref] = useState("/#struktur");
+  const pathname = usePathname();
+  const isDivisionPage = pathname?.startsWith("/divisions");
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -26,19 +29,27 @@ export default function Header() {
             aria-label="Main Navigation"
             className="hidden md:flex items-center gap-6 lg:gap-8"
           >
-            {NAV_LINKS.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-xs lg:text-[13px] font-medium text-tif-text hover:text-tif-secondary transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
+            {NAV_LINKS.map((item) => {
+              const isStrukturActive =
+                isDivisionPage && item.href === "/#struktur";
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`text-xs lg:text-[13px] font-medium text-tif-text hover:text-tif-secondary transition-colors py-1 ${
+                    isStrukturActive
+                      ? "border-b-2 border-tif-secondary font-semibold"
+                      : ""
+                  }`}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
 
           <div className="hidden md:flex items-center">
-            <CtaPillButton href="#kontak" label="Gabung Sekarang" />
+            <CtaPillButton href="/#kontak" label="Gabung Sekarang" />
           </div>
 
           <div className="flex md:hidden items-center">
@@ -110,7 +121,7 @@ export default function Header() {
 
         <div className="flex flex-col items-center gap-4 pt-8 pb-2">
           <CtaPillButton
-            href="#kontak"
+            href="/#kontak"
             label="Gabung Sekarang"
             onClick={() => setIsOpen(false)}
             className="w-full py-4 text-base"
