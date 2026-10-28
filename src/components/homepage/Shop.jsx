@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SHOP_ITEMS } from "@l/constants";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import { SectionContainer, SectionHeader } from "@c/ui/SectionWrapper";
@@ -11,7 +12,7 @@ export default function Shop() {
         title="Shop"
         subtitle={
           <>
-            Merchandise dan produk resmi HIMATIF USU.{ " " }
+            Merchandise dan produk resmi HIMATIF USU.{" "}
             <span className="hidden md:inline">Klik</span>
             <span className="md:hidden">Ketuk</span> produk untuk melihat
             detailnya di Instagram.
@@ -19,24 +20,33 @@ export default function Shop() {
         }
       />
 
-      {/* Product Grid: 2 cols on mobile, 6-col grid on desktop (rows 1-2: 3 items, row 3: 2 items) */ }
+      {/* Product Grid: 2 cols on mobile, 6-col grid on desktop (rows 1-2: 3 items, row 3: 2 items) */}
       <div className="grid grid-cols-2 md:grid-cols-6 gap-x-3 sm:gap-x-4 md:gap-x-5 gap-y-5 sm:gap-y-6 md:gap-y-7 mt-8 md:mt-10 w-full">
-        { SHOP_ITEMS.map((item) => (
+        {SHOP_ITEMS.map((item) => (
           <a
-            key={ item.id }
-            href={ item.href }
+            key={item.id}
+            href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={ `group flex flex-col ${item.colSpan}` }
+            className={`group flex flex-col ${item.colSpan}`}
           >
             <ImagePlaceholder
-              dark={ item.dark }
-              className={ `${item.bgClass} w-full h-40 sm:h-48 md:h-48 lg:h-56 rounded-2xl transition-transform duration-300 group-hover:scale-[1.01]` }
+              dark={item.dark}
+              className={`${item.bgClass} w-full h-40 sm:h-48 md:h-48 lg:h-56 rounded-2xl transition-transform duration-300 group-hover:scale-[1.01]`}
               iconClassName="text-2xl md:text-2xl"
             >
+              {item.image && (
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 480px"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+              )}
               <span
                 aria-hidden="true"
-                className="absolute top-2.5 right-2.5 md:top-3 md:right-3 w-7 h-7 rounded-full bg-tif-bg text-tif-text inline-flex items-center justify-center shadow-xs transition-transform group-hover:scale-105"
+                className="absolute z-10 top-2.5 right-2.5 md:top-3 md:right-3 w-7 h-7 rounded-full bg-tif-bg text-tif-text inline-flex items-center justify-center shadow-xs transition-transform group-hover:scale-105"
               >
                 <i className="fa-brands fa-instagram text-xs" />
               </span>
