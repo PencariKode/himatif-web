@@ -187,5 +187,24 @@ export const SHOP_ITEMS = [
   },
 ];
 
+export const CONTACT_INFO = {
+  tagline: "Satu Rasa, Satu Hati, Satu TI",
+  address:
+    "Jl. Alumni No. 3 Gedung B lantai 4. Kampus USU, Padang Bulan, Medan 20155.",
+  shortLocation: "Gedung B Lt. 4 Fasilkom-TI USU, Medan",
+  email: "himatifusu.medan@gmail.com",
+  instagram: "https://instagram.com/himatifusu",
+  instagramHandle: "@himatifusu",
+  coordinates: {
+    lat: 3.562625380207571,
+    lon: 98.6597199958443,
+  },
+  tileUrl: "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+  tileAttribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/">HOT</a>',
+  osmViewUrl:
+    "https://maps.app.goo.gl/ov6wgXnf1P4tfJ8a8",
+};
+
 export { DIVISI_LIST } from "./division";
 export { EVENT_LIST } from "./event";
