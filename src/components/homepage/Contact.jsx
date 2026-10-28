@@ -3,8 +3,8 @@ import { SectionContainer, SectionHeader } from "@c/ui/SectionWrapper";
 
 export default function Contact() {
   return (
-    <SectionContainer id="kontak" bgClass="bg-tif-bg">
-      {/* Kontak HIMATIF */}
+    <SectionContainer id="kontak" bgClass="bg-tif-acc-cream">
+      {/* Kontak HIMATIF */ }
       <SectionHeader
         variant="split"
         eyebrow="KONTAK HIMATIF"
@@ -14,14 +14,15 @@ export default function Contact() {
         <div className="pt-1">
           <CtaPillButton
             variant="social-cream"
-            href="https://instagram.com/himatif.usu"
-            label="@himatif.usu"
+            href="https://instagram.com/himatifusu"
+            label="@himatifusu"
             leftIcon="fa-brands fa-instagram"
+            className="!bg-tif-bg"
           />
         </div>
       </SectionHeader>
 
-      {/* Location / Map Card */}
+      {/* Location / Map Card */ }
       <div className="mt-10 md:mt-11 w-full h-60 sm:h-72 md:h-64 lg:h-72 bg-tif-acc-bluesky rounded-2xl flex flex-col items-center justify-center gap-3.5 px-4">
         <div className="w-14 h-14 md:w-12 md:h-12 rounded-full bg-tif-secondary text-tif-primary flex items-center justify-center">
           <i
@@ -34,7 +35,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Come Join Us! CTA */}
+      {/* Come Join Us! CTA */ }
       <div className="mt-20 md:mt-20 mb-2 w-full flex flex-col items-center">
         <SectionHeader
           variant="center"

@@ -3,6 +3,7 @@ import About from "@c/homepage/About";
 import Structure from "@c/homepage/Structure";
 import Events from "@c/homepage/Events";
 import Gallery from "@c/homepage/Gallery";
+import Shop from "@c/homepage/Shop";
 import Contact from "@c/homepage/Contact";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Structure />
       <Events />
       <Gallery />
+      <Shop />
       <Contact />
     </main>
   );

@@ -112,5 +112,80 @@ export const GALLERY_DESKTOP_ITEMS = [
   { bgClass: "bg-tif-acc-bluesky", colSpan: "md:col-span-5", dark: false },
 ];
 
+export const SHOP_ITEMS = [
+  {
+    id: "kaos-himatif-2026",
+    name: "Kaos HIMATIF 2026",
+    price: "Rp 95.000",
+    bgClass: "bg-tif-acc-bluesky",
+    colSpan: "md:col-span-2",
+    dark: false,
+    href: "https://instagram.com/himatifshop",
+  },
+  {
+    id: "hoodie-himpunan",
+    name: "Hoodie Himpunan",
+    price: "Rp 185.000",
+    bgClass: "bg-tif-acc-sand",
+    colSpan: "md:col-span-2",
+    dark: false,
+    href: "https://instagram.com/himatifshop",
+  },
+  {
+    id: "jaket-angkatan",
+    name: "Jaket Angkatan",
+    price: "Rp 210.000",
+    bgClass: "bg-tif-acc-indigo",
+    colSpan: "md:col-span-2",
+    dark: true,
+    href: "https://instagram.com/himatifshop",
+  },
+  {
+    id: "tote-bag",
+    name: "Tote Bag",
+    price: "Rp 55.000",
+    bgClass: "bg-tif-acc-sand",
+    colSpan: "md:col-span-2",
+    dark: false,
+    href: "https://instagram.com/himatifshop",
+  },
+  {
+    id: "topi-himatif",
+    name: "Topi HIMATIF",
+    price: "Rp 45.000",
+    bgClass: "bg-tif-acc-bluesky",
+    colSpan: "md:col-span-2",
+    dark: false,
+    href: "https://instagram.com/himatifshop",
+  },
+  {
+    id: "lanyard",
+    name: "Lanyard",
+    price: "Rp 25.000",
+    bgClass: "bg-tif-acc-cream",
+    colSpan: "md:col-span-2",
+    dark: false,
+    href: "https://instagram.com/himatifshop",
+  },
+  {
+    id: "paket-stiker",
+    name: "Paket Stiker",
+    price: "Rp 15.000",
+    bgClass: "bg-tif-primary",
+    colSpan: "md:col-span-3",
+    dark: true,
+    href: "https://instagram.com/himatifshop",
+  },
+  {
+    id: "gantungan-kunci",
+    name: "Gantungan Kunci",
+    price: "Rp 20.000",
+    bgClass: "bg-tif-acc-bluesky",
+    colSpan: "md:col-span-3",
+    dark: false,
+    href: "https://instagram.com/himatifshop",
+  },
+];
+
 export { DIVISI_LIST } from "./division";
 export { EVENT_LIST } from "./event";
