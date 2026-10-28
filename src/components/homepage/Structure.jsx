@@ -1,11 +1,16 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BPH_BOTTOM_GROUPS, BPH_TOP_MEMBERS } from "@l/constants";
 import { DIVISI_LIST } from "@l/constants/division";
+import {
+  getDivisionWithImages,
+  resolveMemberImages,
+} from "@l/division-images";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import MemberCard from "@c/ui/MemberCard";
 import { SectionContainer, SectionHeader } from "@c/ui/SectionWrapper";
 
-function DivisiCard({ slug, name, fullName, bgClass, dark }) {
+function DivisiCard({ slug, name, fullName, bgClass, dark, cardImage }) {
   return (
     <Link
       href={`/divisions/${slug}`}
@@ -14,12 +19,22 @@ function DivisiCard({ slug, name, fullName, bgClass, dark }) {
       <ImagePlaceholder
         dark={dark}
         className={`w-full h-64 sm:h-72 md:h-56 lg:h-64 rounded-2xl ${bgClass} items-start pt-16 sm:pt-20 md:pt-16 lg:pt-20`}
-        iconClassName="text-2xl md:text-2xl z-10"
+        iconClassName={`text-2xl md:text-2xl ${cardImage ? "" : "z-10"}`}
       >
+        {cardImage && (
+          <Image
+            src={cardImage}
+            alt={`Divisi ${name}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+        )}
+
         {/* Bottom Gradient Overlay */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-t from-tif-primary via-tif-primary/65 to-transparent pointer-events-none"
+          className="absolute inset-0 bg-gradient-to-t from-tif-primary via-tif-primary/65 to-transparent pointer-events-none z-10"
         />
 
         {/* Bottom Info & Action */}
@@ -45,6 +60,14 @@ function DivisiCard({ slug, name, fullName, bgClass, dark }) {
 }
 
 export default function Structure() {
+  const bphTopMembers = resolveMemberImages(BPH_TOP_MEMBERS);
+  const bphBottomGroups = BPH_BOTTOM_GROUPS.map((group) =>
+    resolveMemberImages(group)
+  );
+  const divisionsWithImages = DIVISI_LIST.map((divisi) =>
+    getDivisionWithImages(divisi)
+  );
+
   return (
     <SectionContainer id="struktur" bgClass="bg-tif-acc-cream">
       <SectionHeader
@@ -63,11 +86,13 @@ export default function Structure() {
         <div className="flex flex-col gap-3 sm:gap-4 md:gap-6 w-full">
           {/* Top Row: Ketua & Wakil Ketua */}
           <div className="flex flex-row justify-center gap-3 sm:gap-4 md:gap-5 w-full">
-            {BPH_TOP_MEMBERS.map((member) => (
+            {bphTopMembers.map((member) => (
               <MemberCard
                 key={member.role}
                 name={member.name}
+                nim={member.nim}
                 role={member.role}
+                image={member.image}
                 className="flex-1 md:flex-initial md:w-[calc(50%-10px)] lg:w-[270px]"
               />
             ))}
@@ -75,7 +100,7 @@ export default function Structure() {
 
           {/* Bottom Row: Sekretaris Group & Bendahara Group */}
           <div className="flex flex-col lg:flex-row justify-between gap-3 sm:gap-4 lg:gap-10 w-full">
-            {BPH_BOTTOM_GROUPS.map((group, groupIdx) => (
+            {bphBottomGroups.map((group, groupIdx) => (
               <div
                 key={groupIdx}
                 className="flex flex-row gap-3 sm:gap-4 md:gap-5 w-full lg:w-[46%]"
@@ -84,7 +109,9 @@ export default function Structure() {
                   <MemberCard
                     key={member.role}
                     name={member.name}
+                    nim={member.nim}
                     role={member.role}
+                    image={member.image}
                     className="flex-1"
                   />
                 ))}
@@ -101,7 +128,7 @@ export default function Structure() {
         </h3>
 
         <div className="flex flex-col md:flex-row md:flex-wrap gap-5 md:gap-5 w-full">
-          {DIVISI_LIST.map((divisi) => (
+          {divisionsWithImages.map((divisi) => (
             <DivisiCard key={divisi.slug} {...divisi} />
           ))}
         </div>

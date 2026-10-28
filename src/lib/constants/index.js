@@ -85,18 +85,48 @@ export const MISI_LIST = [
 ];
 
 export const BPH_TOP_MEMBERS = [
-  { name: "Nama Lengkap", role: "KETUA UMUM" },
-  { name: "Nama Lengkap", role: "WAKIL KETUA UMUM" },
+  {
+    name: "M Ubay Arashy S Sembodo",
+    nim: "241402081",
+    role: "KETUA UMUM",
+    image: "/division/bph/ketua.png",
+  },
+  {
+    name: "Aldrik Noel Sianipar",
+    nim: "241402049",
+    role: "WAKIL KETUA UMUM",
+    image: "/division/bph/wakil_ketua.png",
+  },
 ];
 
 export const BPH_BOTTOM_GROUPS = [
   [
-    { name: "Nama Lengkap", role: "SEKRETARIS UMUM" },
-    { name: "Nama Lengkap", role: "WAKIL SEKRETARIS UMUM" },
+    {
+      name: "Putri Sahara Tampubolon",
+      nim: "241402015",
+      role: "SEKRETARIS UMUM",
+      image: "/division/bph/sekretaris.png",
+    },
+    {
+      name: "Anggie Rahmadina Nasution",
+      nim: "241402005",
+      role: "WAKIL SEKRETARIS",
+      image: "/division/bph/wakil_sekretaris.png",
+    },
   ],
   [
-    { name: "Nama Lengkap", role: "BENDAHARA UMUM" },
-    { name: "Nama Lengkap", role: "WAKIL BENDAHARA UMUM" },
+    {
+      name: "Cindy Samosir",
+      nim: "241402009",
+      role: "BENDAHARA UMUM",
+      image: "/division/bph/bendahara.png",
+    },
+    {
+      name: "Ilma Mahmudah",
+      nim: "241402003",
+      role: "WAKIL BENDAHARA",
+      image: "/division/bph/wakil_bendahara.png",
+    },
   ],
 ];
 

@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DIVISI_LIST } from "@l/constants/division";
+import { getDivisionWithImages } from "@l/division-images";
 import EventAccordion from "@c/ui/EventAccordion";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import MemberCard from "@c/ui/MemberCard";
@@ -32,11 +34,13 @@ export async function generateMetadata({ params }) {
 
 export default async function DivisionDetailPage({ params }) {
   const { slug } = await params;
-  const divisi = DIVISI_LIST.find((d) => d.slug === slug);
+  const rawDivisi = DIVISI_LIST.find((d) => d.slug === slug);
 
-  if (!divisi) {
+  if (!rawDivisi) {
     notFound();
   }
+
+  const divisi = getDivisionWithImages(rawDivisi);
 
   return (
     <main className="flex flex-col w-full flex-1 bg-tif-bg">
@@ -80,7 +84,18 @@ export default async function DivisionDetailPage({ params }) {
           dark={divisi.dark}
           className={`w-full h-52 sm:h-64 md:h-[300px] lg:h-[340px] ${divisi.bgClass} rounded-2xl md:rounded-3xl mt-6 md:mt-8`}
           iconClassName="text-3xl md:text-4xl"
-        />
+        >
+          {divisi.heroImage && (
+            <Image
+              src={divisi.heroImage}
+              alt={`Banner Divisi ${divisi.name}`}
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-cover object-center"
+            />
+          )}
+        </ImagePlaceholder>
 
         {/* Tentang Divisi (2-Col Flexbox Split) */}
         <div className="mt-12 md:mt-16 flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10 w-full">
@@ -126,7 +141,9 @@ export default async function DivisionDetailPage({ params }) {
               <MemberCard
                 key={leader.role}
                 name={leader.name}
+                nim={leader.nim}
                 role={leader.role}
+                image={leader.image}
                 className="flex-1 lg:flex-initial lg:w-[270px]"
               />
             ))}
@@ -154,7 +171,9 @@ export default async function DivisionDetailPage({ params }) {
               <MemberCard
                 key={idx}
                 name={member.name}
-                role={member.role}
+                nim={member.nim ?? "2X1402XXX"}
+                role={member.role ?? "ANGGOTA"}
+                image={member.image}
                 className="w-[calc(50%-6px)] sm:w-[calc(50%-8px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)]"
               />
             ))}
