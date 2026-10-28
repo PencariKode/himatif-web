@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata = {
   title: "HIMATIF USU",
   description: "Himpunan Mahasiswa Teknologi Informasi USU 2026",
+  icons: {
+    icon: "/assets/himatif_logo_whitebg.ico",
+    shortcut: "/assets/himatif_logo_whitebg.ico",
+    apple: "/assets/himatif_logo_rounded_whitebg.webp",
+  },
 };
 
 export default function RootLayout({ children }) {

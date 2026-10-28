@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function BrandLogo({
@@ -14,13 +15,19 @@ export default function BrandLogo({
       className={`inline-flex items-center gap-2.5 shrink-0 group ${className}`}
     >
       <span
-        className={`w-10 h-10 md:w-8 md:h-8 rounded-xl md:rounded-lg flex items-center justify-center font-bold text-lg md:text-sm transition-transform group-hover:scale-105 ${
+        className={`relative w-10 h-10 md:w-8 md:h-8 rounded-xl md:rounded-lg overflow-hidden flex items-center justify-center shrink-0 transition-transform group-hover:scale-105 ${
           isInverted
-            ? "bg-tif-secondary text-tif-primary"
-            : "bg-tif-primary text-tif-secondary"
+            ? "bg-tif-bg"
+            : "bg-tif-bg border border-tif-border/25 shadow-2xs"
         }`}
       >
-        H
+        <Image
+          src="/assets/himatif_logo_rounded_whitebg.webp"
+          alt="Logo HIMATIF USU"
+          fill
+          sizes="40px"
+          className="object-contain p-0.5"
+        />
       </span>
       <span
         className={`font-bold text-base md:text-sm tracking-tight ${

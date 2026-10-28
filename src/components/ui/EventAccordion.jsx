@@ -29,9 +29,24 @@ export function EventAccordionItem({ item, isOpen, onToggle }) {
       <div className="flex flex-col lg:w-7/12">
         <div className="flex flex-row items-center justify-between gap-4">
           <h3
-            className={`font-bold transition-colors duration-300 ${
+            role={isOpen ? "button" : undefined}
+            tabIndex={isOpen ? 0 : undefined}
+            onClick={(e) => {
+              if (isOpen) {
+                e.stopPropagation();
+                onToggle();
+              }
+            }}
+            onKeyDown={(e) => {
+              if (isOpen && (e.key === "Enter" || e.key === " ")) {
+                e.preventDefault();
+                e.stopPropagation();
+                onToggle();
+              }
+            }}
+            className={`font-bold transition-colors duration-300 cursor-pointer select-none ${
               isOpen
-                ? "text-lg sm:text-xl md:text-lg lg:text-xl text-tif-text-inverse"
+                ? "text-lg sm:text-xl md:text-lg lg:text-xl text-tif-text-inverse hover:text-tif-secondary"
                 : "text-base sm:text-lg md:text-base lg:text-lg text-tif-text"
             }`}
           >

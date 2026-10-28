@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { NAV_LINKS } from "@l/constants";
 import BrandLogo from "@c/ui/BrandLogo";
 import { CircleIconButton, CtaPillButton } from "@c/ui/Buttons";
+import OfficialLogos from "@c/ui/OfficialLogos";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -126,6 +127,7 @@ export default function Header() {
             onClick={() => setIsOpen(false)}
             className="w-full py-4 text-base"
           />
+          <OfficialLogos variant="dark" size="sm" className="pt-1" />
           <p className="text-xs text-tif-acc-slate text-center">
             Himpunan Mahasiswa Teknologi Informasi USU
           </p>
