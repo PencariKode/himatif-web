@@ -78,10 +78,11 @@ export const HERO_STATS = [
 ];
 
 export const MISI_LIST = [
-  "Membangun kekeluargaan dan solidaritas antar mahasiswa Teknologi Informasi.",
-  "Mengembangkan potensi akademik dan non-akademik anggota.",
-  "Menjadi jembatan aspirasi mahasiswa kepada program studi dan fakultas.",
-  "Menjalin kerja sama dengan mitra serta menyelenggarakan kegiatan yang bermanfaat.",
+  "Menyediakan ruang bagi mahasiswa Teknologi Informasi untuk belajar, berdiskusi, dan mengembangkan diri di luar kelas.",
+  "Mendukung pengembangan minat dan bakat mahasiswa melalui program kerja yang relevan dan bermanfaat.",
+  "Komunikasi berperan penting karena menjadi sarana untuk membangun budaya terbuka, mendukung kerja sama, dan memperkuat rasa kebersamaan dalam organisasi.",
+  "Membangun budaya kerja organisasi yang terbuka, bertanggung jawab, dan saling menghargai.",
+  "Menumbuhkan semangat kebersamaan dan mempererat tali persaudaraan antar mahasiswa Teknologi Informasi."
 ];
 
 export const BPH_TOP_MEMBERS = [

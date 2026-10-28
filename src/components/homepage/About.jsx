@@ -31,7 +31,7 @@ export default function About() {
         <EyebrowTag className="text-tif-text-secondary">
           TENTANG HIMATIF
         </EyebrowTag>
-        <p className="text-xl sm:text-2xl md:text-xl lg:text-2xl font-bold leading-snug tracking-tight">
+        <p className="text-base sm:text-2xl md:text-xl lg:text-2xl font-bold leading-snug tracking-tight">
           <span className="text-tif-text">
             Himpunan Mahasiswa Teknologi Informasi (HIMATIF) adalah wadah
             aspirasi, kolaborasi, dan pengembangan diri mahasiswa TI USU.{" "}
@@ -58,9 +58,8 @@ export default function About() {
         {/* Visi Card */}
         <div className="w-full lg:w-[36%] bg-tif-primary text-tif-text-inverse rounded-2xl p-7 sm:p-8 md:p-7 lg:p-8 flex flex-col gap-3">
           <EyebrowTag className="text-tif-secondary">VISI</EyebrowTag>
-          <p className="text-lg sm:text-xl md:text-base lg:text-lg font-bold leading-relaxed">
-            Menjadi himpunan yang unggul, inklusif, dan inovatif dalam mewadahi
-            mahasiswa Teknologi Informasi USU untuk berkarya dan berdampak.
+          <p className="text-sm font-medium sm:text-xl md:text-base md:font-semibold leading-relaxed">
+            Mengupayakan HIMATIF sebagai wadah pengembangan mahasiswa Teknologi Informasi yang bertakwa kepada Tuhan Yang Maha Esa, demokratis, berkarakter, bertanggung jawab, berpikir kritis, inovatif, progresif, serta memiliki kepedulian sosial dalam menghadapi dinamika kehidupan kampus secara aktif dan bermakna, sebagai bekal untuk berkontribusi di era transformasi digital.
           </p>
         </div>
 
