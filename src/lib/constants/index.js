@@ -59,7 +59,7 @@ export const OFFICIAL_LOGOS = [
 export const HERO_STATS = [
   {
     icon: "fa-regular fa-user-group",
-    value: "100+",
+    value: "71",
     labelDesktop: "Anggota Aktif",
     labelMobile: "Anggota",
   },
@@ -71,7 +71,7 @@ export const HERO_STATS = [
   },
   {
     icon: "fa-regular fa-calendar",
-    value: "10+",
+    value: "60+",
     labelDesktop: "Program Kerja",
     labelMobile: "Program",
   },
