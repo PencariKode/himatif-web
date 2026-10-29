@@ -1,14 +1,14 @@
 export function SectionContainer({
   id,
   bgClass = "bg-tif-bg",
-  className = "",
+  className = "py-14 md:py-16 lg:py-20",
   innerClassName = "",
   children,
 }) {
   return (
     <section
       id={id}
-      className={`w-full px-5 sm:px-8 md:px-12 lg:px-20 py-14 md:py-16 lg:py-20 ${bgClass} ${className}`}
+      className={`w-full px-5 sm:px-8 md:px-12 lg:px-20 ${bgClass} ${className}`}
     >
       <div className={`w-full max-w-5xl mx-auto flex flex-col ${innerClassName}`}>
         {children}

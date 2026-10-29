@@ -1,4 +1,4 @@
-import { HERO_STATS } from "@l/constants";
+import { CONTACT_INFO, HERO_STATS } from "@l/constants";
 import { CtaPillButton } from "@c/ui/Buttons";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import { EyebrowTag, SectionContainer } from "@c/ui/SectionWrapper";
@@ -18,9 +18,13 @@ export default function Hero() {
           <span className="md:hidden">HIMPUNAN MAHASISWA TI USU</span>
         </EyebrowTag>
 
-        <h1 className="font-extrabold text-tif-text text-6xl sm:text-7xl md:text-7xl lg:text-[104px] leading-none tracking-tight mt-2 mb-3 md:my-3">
+        <h1 className="font-extrabold text-tif-text text-6xl sm:text-7xl md:text-7xl lg:text-[104px] leading-none tracking-tight mt-2 mb-1.5 md:mt-3 md:mb-2">
           HIMATIF
         </h1>
+
+        <p className="text-xs sm:text-sm font-semibold italic text-tif-text-secondary tracking-wide mb-2.5 md:mb-3">
+          &ldquo;{CONTACT_INFO.tagline}&rdquo;
+        </p>
 
         <p className="text-sm md:text-sm lg:text-base text-tif-text-muted max-w-md leading-relaxed">
           Wadah kolaborasi, aspirasi, dan inovasi mahasiswa Teknologi Informasi
