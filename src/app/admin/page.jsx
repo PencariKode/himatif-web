@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { logoutAdmin } from "@l/actions/auth-actions";
@@ -60,18 +61,31 @@ export default async function AdminDashboardPage() {
             </p>
           </div>
 
-          <form action={logoutAdmin} className="w-full pt-2">
-            <button
-              type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-tif-secondary hover:bg-tif-secondary-300 text-tif-text-on-accent font-semibold text-sm py-3 px-6 transition-colors cursor-pointer"
+          <div className="w-full flex flex-col gap-3 pt-2">
+            <Link
+              href="/admin/gallery"
+              className="w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-tif-primary hover:bg-tif-acc-indigo text-tif-text-inverse font-semibold text-sm py-3.5 px-6 transition-colors"
             >
               <i
-                className="fa-regular fa-right-from-bracket text-xs"
+                className="fa-regular fa-photo-film text-tif-secondary text-sm"
                 aria-hidden="true"
               />
-              <span>Logout dari Dashboard</span>
-            </button>
-          </form>
+              <span>Kelola & Upload Galeri</span>
+            </Link>
+
+            <form action={logoutAdmin} className="w-full">
+              <button
+                type="submit"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-tif-secondary hover:bg-tif-secondary-300 text-tif-text-on-accent font-semibold text-sm py-3 px-6 transition-colors cursor-pointer"
+              >
+                <i
+                  className="fa-regular fa-right-from-bracket text-xs"
+                  aria-hidden="true"
+                />
+                <span>Logout dari Dashboard</span>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

@@ -10,7 +10,7 @@ const ALLOWED_MIME_TYPES = new Set([
   "image/avif",
 ]);
 
-const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024; // 5 MB
+const MAX_FILE_SIZE_BYTES = 15 * 1024 * 1024; // 15 MB
 
 /**
  * Server Action khusus Admin untuk mengunggah gambar ke Cloudinary.
@@ -49,7 +49,7 @@ export async function uploadImageAction(formData) {
   if (file.size > MAX_FILE_SIZE_BYTES) {
     return {
       success: false,
-      error: "Ukuran gambar maksimal adalah 5 MB.",
+      error: "Ukuran gambar maksimal adalah 15 MB.",
     };
   }
 

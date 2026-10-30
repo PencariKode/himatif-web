@@ -38,20 +38,36 @@ model User {
 }
 
 model Program {
-  id               String   @id @default(cuid())
-  slug             String   @unique
+  id               String    @id @default(cuid())
+  slug             String    @unique
   name             String
-  description      String   @db.Text
+  description      String    @db.Text
   category         String
   frequency        String
-  isAsCommittee    Boolean  @default(false) @map("is_as_committee")
-  isFeatured       Boolean  @default(false) @map("is_featured")
-  divisionInCharge Division @map("division_in_charge")
+  isAsCommittee    Boolean   @default(false) @map("is_as_committee")
+  isFeatured       Boolean   @default(false) @map("is_featured")
+  divisionInCharge Division  @map("division_in_charge")
   cover            String?
-  createdAt        DateTime @default(now()) @map("created_at")
-  updatedAt        DateTime @updatedAt @map("updated_at")
+  galleries        Gallery[]
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
 
   @@index([divisionInCharge])
   @@index([isFeatured])
   @@map("programs")
+}
+
+model Gallery {
+  id        String   @id @default(cuid())
+  imageUrl  String   @map("image_url")
+  publicId  String   @map("public_id")
+  caption   String?
+  programId String?  @map("program_id")
+  program   Program? @relation(fields: [programId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@index([programId])
+  @@index([createdAt])
+  @@map("gallery")
 }
