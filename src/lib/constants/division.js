@@ -25,7 +25,7 @@ export const DIVISI_LIST = [
       { name: "Indah Ayu Gemilang", role: "SEKRETARIS DIVISI", nim: "251402087"},
     ],
     members: [
-      {name: "Vincent Jose C A Simbolon", nim: "241402039"},
+      {name: "Vincent Jose Christian Andreas Simbolon", nim: "241402039"},
       {name: "Mufti Fardan Lubis", nim: "241402107"},
       {name: "Cindy Christina Rajagukguk", nim: "251402021"},
       {name: "Tabhita Kristy Silitonga", nim: "251402023"},
@@ -98,7 +98,7 @@ export const DIVISI_LIST = [
       "Divisi ini menjadi motor penggerak budaya diskusi teknologi, pelatihan praktis, serta pendampingan kompetisi IT baik di tingkat nasional maupun internasional.",
     leaders: [
       { name: "Panji Briant Depari", nim: "241402034", role: "KOORDINATOR DIVISI"},
-      { name: "Jonathan Mulianta B Ginting", nim: "251402057", role: "SEKRETARIS DIVISI"},
+      { name: "Jonathan Mulianta Brema Ginting", nim: "251402057", role: "SEKRETARIS DIVISI"},
     ],
     members: [
       {name: "Sutanto", nim: "241402037"},
@@ -106,7 +106,7 @@ export const DIVISI_LIST = [
       {name: "Yeremia Nicolas Purba", nim: "241402140"},
       {name: "Daffa Umayans Saragih", nim: "251402011"},
       {name: "M Andra Kenzie Sibuea", nim: "251402024"},
-      {name: "M Farhan P Harahap", nim: "251402068"},
+      {name: "Muhammad Farhan Praditya Harahap", nim: "251402068"},
       {name: "Juda Benhur Turnip", nim: "251402096"},
     ],
     defaultProgramId: "litbang-seminar-workshop",
@@ -164,10 +164,10 @@ export const DIVISI_LIST = [
       "Selain mengabadikan setiap momen kegiatan himpunan, divisi ini juga membangun hubungan komunikasi yang baik dengan pihak internal kampus maupun mitra eksternal.",
     leaders: [
       { name: "Melody Syalomifa Marbun", nim: "241402008", role: "KOORDINATOR DIVISI"},
-      { name: "Jevine Jeje Z Simanjuntak", nim: "251402085", role: "SEKRETARIS DIVISI"},
+      { name: "Jevine Jeje Zakarias Simanjuntak", nim: "251402085", role: "SEKRETARIS DIVISI"},
     ],
     members: [
-      {name: "Yosia Marcel K Simanjuntak", nim: "241402114"},
+      {name: "Yosia Marcel Koreshy Simanjuntak", nim: "241402114"},
       {name: "Ramadiyan Athallah Kusuma", nim: "251402027"},
       {name: "Deby Yasmin Nabila", nim: "251402060"},
       {name: "Audrey Syantika", nim: "251402074"},
@@ -232,14 +232,14 @@ export const DIVISI_LIST = [
       { name: "M Hasbi Zahy Rabbani", nim: "241402038", role: "SEKRETARIS DIVISI"},
     ],
     members: [
-      {name: "Rio Febrian S Naibaho", nim: "241402110"},
+      {name: "Rio Febrian Samuel Naibaho", nim: "241402110"},
       {name: "Alham Sarosi Saragih", nim: "241402113"},
       {name: "Farrel Reza Saputra", nim: "241402007"},
-      {name: "M Dzakwan Ismail Rangkuti", nim: "251402014"},
+      {name: "Muhammad Dzakwan Ismail Rangkuti", nim: "251402014"},
       {name: "Muhammad Vasha Nadar", nim: "251402019"},
       {name: "Felix Desselo Tambunan", nim: "251402033"},
       {name: "Gabriel Saurman Parhusip", nim: "251402043"},
-      {name: "M Fakhry A Daulay", nim: "251402053"},
+      {name: "Muhammad Fakhry Adrian Daulay", nim: "251402053"},
       {name: "Cinta Pardame Sihaloho", nim: "251402090"},
       {name: "Gracia Tri ErGladys Simatupang", nim: "251402103"},
       {name: "Syamil Mali Uzair", nim: "251402127"},
@@ -300,10 +300,10 @@ export const DIVISI_LIST = [
       "Divisi ini juga menumbuhkan semangat technopreneurship agar mahasiswa mampu melihat peluang bisnis di bidang kreatif maupun teknologi.",
     leaders: [
       { name: "Rasyiqah Amalina Putri", role: "KOORDINATOR DIVISI", nim: "241402024" },
-      { name: "Faridhah 'Izzati H Hasugian", role: "SEKRETARIS DIVISI", nim: "241402118" },
+      { name: "Faridhah 'Izzati Hasanah Hasugian", role: "SEKRETARIS DIVISI", nim: "241402118" },
     ],
     members: [
-      { name: "Anggun D M Harahap", nim: "241402018" },
+      { name: "Anggun Dwikasih Mahrani Harahap", nim: "241402018" },
       { name: "Chaterine Eklesia Maryati", nim: "241402123" },
       { name: "Qeizha Aleesha Zyva", nim: "251404054" },
       { name: "Jihan Fadhilah", nim: "241402098" },
@@ -490,11 +490,11 @@ export const DIVISI_LIST = [
     aboutSecondary:
       "Dengan semangat kekeluargaan dan pelayanan, divisi ini menghadirkan ruang saling menguatkan dalam perkuliahan maupun kehidupan sehari-hari.",
     leaders: [
-      { name: "Daniele Christian H Siahaan", role: "KOORDINATOR DIVISI", nim: "241402060" },
+      { name: "Daniele Christian Hasiholland Siahaan", role: "KOORDINATOR DIVISI", nim: "241402060" },
       { name: "Chnytia Hutabarat", role: "SEKRETARIS DIVISI", nim: "251402022" },
     ],
     members: [
-      {name: "Kevin Rodriguez", nim: "251402028"},
+      {name: "Kevin Rodrigues", nim: "251402028"},
       {name: "Farel Yamotaro Hia", nim: "251402042"},
       {name: "Debora Tampubolon", nim: "251402069"},
       {name: "Royceana Silaban", nim: "251402121"},

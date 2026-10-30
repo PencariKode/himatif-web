@@ -87,7 +87,7 @@ export const MISI_LIST = [
 
 export const BPH_TOP_MEMBERS = [
   {
-    name: "M Ubay Arashy S Sembodo",
+    name: "M Ubay Arashy Supo Sembodo",
     nim: "241402081",
     role: "KETUA UMUM",
     image: "/division/bph/ketua.png",

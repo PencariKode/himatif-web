@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
+import { nameShortener } from "@l/util";
 
 export default function MemberCard({
   name,
@@ -10,6 +11,7 @@ export default function MemberCard({
 }) {
   return (
     <div
+      title={`${name} - ${nim} - ${role}`}
       className={`bg-tif-bg rounded-2xl overflow-hidden p-0 md:p-4 flex flex-col items-stretch md:gap-3.5 shadow-[0_4px_20px_rgba(19,35,71,0.04)] md:shadow-none ${className}`}
     >
       <ImagePlaceholder
@@ -28,7 +30,7 @@ export default function MemberCard({
       </ImagePlaceholder>
       <div className="flex flex-col gap-0.5 p-3 sm:p-3.5 md:p-0 md:pt-0.5">
         <h4 className="text-xs sm:text-sm md:text-sm lg:text-base font-bold text-tif-text leading-snug truncate">
-          {name}
+          {nameShortener(name)}
         </h4>
         <span className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-wide md:tracking-wider text-tif-text-muted leading-tight">
           {nim} - {role}
