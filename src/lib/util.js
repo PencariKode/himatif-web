@@ -59,3 +59,67 @@ export function nameShortener(name) {
 
   return words.join(" ");
 }
+
+/**
+ * Menyisipkan parameter transformasi optimasi otomatis Cloudinary (`f_auto,q_auto,c_limit,w_...`)
+ * ke dalam URL `res.cloudinary.com` agar gambar dikirim sebagai WebP/AVIF ringan langsung dari CDN.
+ *
+ * @param {string} url
+ * @param {Object} [options]
+ * @param {number} [options.width=1200]
+ * @returns {string}
+ */
+export function optimizeCloudinaryUrl(url, options = {}) {
+  if (!url || typeof url !== "string") return "";
+  if (!url.includes("res.cloudinary.com") || !url.includes("/image/upload/")) {
+    return url;
+  }
+
+  // Hindari duplikasi jika sudah memiliki f_auto / q_auto
+  if (url.includes("/image/upload/f_auto")) {
+    return url;
+  }
+
+  const { width = 1200 } = options;
+  const transforms = ["f_auto", "q_auto"];
+  if (width) {
+    transforms.push("c_limit", `w_${width}`);
+  }
+
+  return url.replace(
+    "/image/upload/",
+    `/image/upload/${transforms.join(",")}/`
+  );
+}
+
+function capitalizeWords(text = "") {
+  return text
+    .toString()
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}
+
+/**
+ * Memformat objek Program dari database Prisma ke struktur item untuk `EventAccordion`.
+ *
+ * @param {Object} program
+ * @returns {Object}
+ */
+export function formatProgramForAccordion(program) {
+  const categoryLabel = capitalizeWords(program.category);
+  const frequencyLabel = capitalizeWords(program.frequency);
+  const tag = [categoryLabel, frequencyLabel].filter(Boolean).join(" · ");
+
+  return {
+    id: program.id,
+    slug: program.slug,
+    title: program.name,
+    description: program.description,
+    tag,
+    cover: program.cover || null,
+  };
+}
+
