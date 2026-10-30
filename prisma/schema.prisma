@@ -12,6 +12,19 @@ enum Role {
   ADMIN
 }
 
+enum Division {
+  BPH
+  PSDM
+  LITBANG
+  MULKOMINFO
+  OLSEN
+  UM
+  HUMAS
+  ROHIS
+  ROHKRIS
+  ROHBUD
+}
+
 model User {
   id           String   @id @default(cuid())
   username     String   @unique
@@ -22,4 +35,23 @@ model User {
   updatedAt    DateTime @updatedAt @map("updated_at")
 
   @@map("users")
+}
+
+model Program {
+  id               String   @id @default(cuid())
+  slug             String   @unique
+  name             String
+  description      String   @db.Text
+  category         String
+  frequency        String
+  isAsCommittee    Boolean  @default(false) @map("is_as_committee")
+  isFeatured       Boolean  @default(false) @map("is_featured")
+  divisionInCharge Division @map("division_in_charge")
+  cover            String?
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  @@index([divisionInCharge])
+  @@index([isFeatured])
+  @@map("programs")
 }
