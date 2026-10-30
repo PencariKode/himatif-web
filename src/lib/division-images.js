@@ -67,7 +67,55 @@ export function resolveMemberImages(members = []) {
 }
 
 /**
- * Enriches a division object with verified `cardImage`, `heroImage`,
+ * Resolves 5 hero collage images from `public/division/<folder>/hero`:
+ * - Index 0 (center hexagon): strictly `1.png` (or null if missing).
+ * - Indices 1..4 (side panels): randomly shuffled from other valid images in `hero/`,
+ *   padded with `null` for any missing slots.
+ */
+export function getDivisionHeroImages(folder) {
+  if (!folder) {
+    return [null, null, null, null, null];
+  }
+
+  const mainImage = resolvePublicImage(`/division/${folder}/hero/1.png`);
+  const dirPath = path.join(process.cwd(), "public", "division", folder, "hero");
+
+  let sideCandidates = [];
+  try {
+    if (fs.existsSync(dirPath)) {
+      const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+      sideCandidates = entries
+        .filter(
+          (entry) =>
+            entry.isFile() &&
+            IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase()) &&
+            entry.name.toLowerCase() !== "1.png"
+        )
+        .map((entry) => `/division/${folder}/hero/${entry.name}`);
+
+      for (let i = sideCandidates.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sideCandidates[i], sideCandidates[j]] = [
+          sideCandidates[j],
+          sideCandidates[i],
+        ];
+      }
+    }
+  } catch {
+    sideCandidates = [];
+  }
+
+  return [
+    mainImage,
+    sideCandidates[0] ?? null,
+    sideCandidates[1] ?? null,
+    sideCandidates[2] ?? null,
+    sideCandidates[3] ?? null,
+  ];
+}
+
+/**
+ * Enriches a division object with verified `cardImage`, `heroImage`, `heroImages`,
  * `leaders` (`koor.png` & `sekdiv.png`), and `members` (`anggota/*`).
  */
 export function getDivisionWithImages(divisi) {
@@ -82,6 +130,7 @@ export function getDivisionWithImages(divisi) {
   const heroImage = resolvePublicImage(
     divisi.heroImage ?? `/division/${folder}/hero.png`
   );
+  const heroImages = getDivisionHeroImages(folder);
 
   const leaderFiles = ["koor.png", "sekdiv.png"];
   const leaders = (divisi.leaders || []).map((leader, idx) => {
@@ -106,6 +155,7 @@ export function getDivisionWithImages(divisi) {
     ...divisi,
     cardImage,
     heroImage,
+    heroImages,
     leaders,
     members,
   };

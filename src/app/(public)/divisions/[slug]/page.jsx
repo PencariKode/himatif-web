@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DIVISI_LIST } from "@l/constants/division";
 import { getDivisionWithImages } from "@l/division-images";
+import DivisionHeroCollage from "@c/ui/DivisionHeroCollage";
 import EventAccordion from "@c/ui/EventAccordion";
-import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import MemberCard from "@c/ui/MemberCard";
 import {
   EyebrowTag,
@@ -79,23 +78,13 @@ export default async function DivisionDetailPage({ params }) {
           </p>
         </div>
 
-        {/* Division Banner */}
-        <ImagePlaceholder
+        {/* Division 5-Image Hero Collage */}
+        <DivisionHeroCollage
+          images={divisi.heroImages}
+          name={divisi.name}
+          bgClass={divisi.bgClass}
           dark={divisi.dark}
-          className={`w-full h-52 sm:h-64 md:h-[300px] lg:h-[340px] ${divisi.bgClass} rounded-2xl md:rounded-3xl mt-6 md:mt-8`}
-          iconClassName="text-3xl md:text-4xl"
-        >
-          {divisi.heroImage && (
-            <Image
-              src={divisi.heroImage}
-              alt={`Banner Divisi ${divisi.name}`}
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 1024px"
-              className="object-cover object-center"
-            />
-          )}
-        </ImagePlaceholder>
+        />
 
         {/* Tentang Divisi (2-Col Flexbox Split) */}
         <div className="mt-12 md:mt-16 flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10 w-full">

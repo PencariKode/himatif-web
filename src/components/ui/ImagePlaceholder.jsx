@@ -2,10 +2,12 @@ export default function ImagePlaceholder({
   dark = false,
   className = "",
   iconClassName = "text-2xl md:text-3xl",
+  style,
   children,
 }) {
   return (
     <div
+      style={style}
       className={`relative flex items-center justify-center overflow-hidden rounded-2xl ${className}`}
     >
       <i
