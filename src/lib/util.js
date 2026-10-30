@@ -91,3 +91,35 @@ export function optimizeCloudinaryUrl(url, options = {}) {
     `/image/upload/${transforms.join(",")}/`
   );
 }
+
+function capitalizeWords(text = "") {
+  return text
+    .toString()
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}
+
+/**
+ * Memformat objek Program dari database Prisma ke struktur item untuk `EventAccordion`.
+ *
+ * @param {Object} program
+ * @returns {Object}
+ */
+export function formatProgramForAccordion(program) {
+  const categoryLabel = capitalizeWords(program.category);
+  const frequencyLabel = capitalizeWords(program.frequency);
+  const tag = [categoryLabel, frequencyLabel].filter(Boolean).join(" · ");
+
+  return {
+    id: program.id,
+    slug: program.slug,
+    title: program.name,
+    description: program.description,
+    tag,
+    cover: program.cover || null,
+  };
+}
+

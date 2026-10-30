@@ -1,10 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import { optimizeCloudinaryUrl } from "@l/util";
 import { CircleIconButton } from "@c/ui/Buttons";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 
 export function EventAccordionItem({ item, isOpen, onToggle }) {
+  const desktopDesc = item.description ?? item.descriptionDesktop;
+  const mobileDesc = item.description ?? item.descriptionMobile;
+
   return (
     <div
       role={!isOpen ? "button" : undefined}
@@ -81,16 +86,16 @@ export function EventAccordionItem({ item, isOpen, onToggle }) {
         <div
           className={`overflow-hidden transition-all duration-500 ease-in-out ${
             isOpen
-              ? "max-h-56 opacity-100 mt-3.5"
+              ? "max-h-96 opacity-100 mt-3.5"
               : "max-h-0 opacity-0 mt-0"
           }`}
         >
           <div className="flex flex-col gap-3.5">
             <p className="hidden md:block text-xs text-tif-secondary leading-relaxed">
-              {item.descriptionDesktop}
+              {desktopDesc}
             </p>
             <p className="md:hidden text-xs text-tif-text-inverse-muted leading-relaxed">
-              {item.descriptionMobile}
+              {mobileDesc}
             </p>
 
             <div className="w-full h-px bg-tif-acc-indigo my-0.5" />
@@ -111,11 +116,24 @@ export function EventAccordionItem({ item, isOpen, onToggle }) {
               : "max-h-0 lg:max-w-0 opacity-0 mt-0 lg:mr-0"
           }`}
         >
-          <ImagePlaceholder
-            dark
-            className="w-full lg:w-56 h-40 sm:h-44 md:h-36 bg-tif-acc-indigo rounded-xl shrink-0"
-            iconClassName="text-2xl"
-          />
+          {item.cover ? (
+            <div className="relative w-full lg:w-56 h-40 sm:h-44 md:h-36 bg-tif-acc-indigo rounded-xl overflow-hidden shrink-0">
+              <Image
+                src={optimizeCloudinaryUrl(item.cover, { width: 600 })}
+                alt={item.title}
+                fill
+                unoptimized
+                sizes="(max-width: 1024px) 100vw, 224px"
+                className="object-cover object-center"
+              />
+            </div>
+          ) : (
+            <ImagePlaceholder
+              dark
+              className="w-full lg:w-56 h-40 sm:h-44 md:h-36 bg-tif-acc-indigo rounded-xl shrink-0"
+              iconClassName="text-2xl"
+            />
+          )}
         </div>
 
         <div className="hidden lg:flex items-center justify-center shrink-0">
@@ -144,8 +162,18 @@ export function EventAccordionItem({ item, isOpen, onToggle }) {
   );
 }
 
-export default function EventAccordion({ items, defaultOpenId = null }) {
+export default function EventAccordion({ items = [], defaultOpenId = null }) {
   const [openId, setOpenId] = useState(defaultOpenId);
+
+  if (!items || items.length === 0) {
+    return (
+      <div className="w-full rounded-2xl border border-tif-border/25 bg-tif-acc-cream/50 px-6 py-10 text-center">
+        <p className="text-xs sm:text-sm text-tif-text-muted">
+          Belum ada program kerja yang ditampilkan pada bagian ini.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col w-full">

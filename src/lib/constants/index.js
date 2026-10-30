@@ -246,4 +246,4 @@ export const CONTACT_INFO = {
 };
 
 export { DIVISI_LIST } from "./division";
-export { EVENT_LIST } from "./event";
+

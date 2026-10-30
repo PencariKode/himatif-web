@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import prisma from "@l/prisma";
 import { DIVISI_LIST } from "@l/constants/division";
 import { getDivisionWithImages } from "@l/division-images";
+import { formatProgramForAccordion } from "@l/util";
 import DivisionHeroCollage from "@c/ui/DivisionHeroCollage";
 import EventAccordion from "@c/ui/EventAccordion";
 import MemberCard from "@c/ui/MemberCard";
@@ -40,6 +42,19 @@ export default async function DivisionDetailPage({ params }) {
   }
 
   const divisi = getDivisionWithImages(rawDivisi);
+
+  let programs = [];
+  if (divisi.divisionEnum) {
+    try {
+      const rawPrograms = await prisma.program.findMany({
+        where: { divisionInCharge: divisi.divisionEnum },
+        orderBy: { createdAt: "asc" },
+      });
+      programs = rawPrograms.map(formatProgramForAccordion);
+    } catch {
+      programs = [];
+    }
+  }
 
   return (
     <main className="flex flex-col w-full flex-1 bg-tif-bg">
@@ -190,8 +205,8 @@ export default async function DivisionDetailPage({ params }) {
 
         <div className="mt-10 md:mt-11 w-full">
           <EventAccordion
-            items={divisi.programs}
-            defaultOpenId={divisi.defaultProgramId}
+            items={programs}
+            defaultOpenId={programs[0]?.id ?? null}
           />
         </div>
       </SectionContainer>
