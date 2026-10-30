@@ -1,9 +1,12 @@
 import { CONTACT_INFO, HERO_STATS } from "@l/constants";
+import { getHomepageHeroImages } from "@l/division-images";
 import { CtaPillButton } from "@c/ui/Buttons";
-import ImagePlaceholder from "@c/ui/ImagePlaceholder";
+import DivisionHeroCollage from "@c/ui/DivisionHeroCollage";
 import { EyebrowTag, SectionContainer } from "@c/ui/SectionWrapper";
 
 export default function Hero() {
+  const heroImages = getHomepageHeroImages();
+
   return (
     <SectionContainer
       bgClass="bg-tif-bg"
@@ -38,24 +41,16 @@ export default function Hero() {
 
       {/* Hero Banner & Floating Stats Card */}
       <div className="relative w-full flex flex-col items-center mt-8 md:mt-10">
-        <ImagePlaceholder
+        <DivisionHeroCollage
+          images={heroImages}
+          name="HIMATIF USU"
+          bgClass="bg-tif-primary"
           dark
-          className="w-full h-56 sm:h-72 md:h-[320px] lg:h-[360px] bg-tif-primary rounded-2xl md:rounded-3xl"
-          iconClassName="text-3xl md:text-4xl z-10"
-        >
-          {/* Decorative Circles (Desktop) */}
-          <div
-            aria-hidden="true"
-            className="hidden md:block absolute -bottom-20 -left-12 w-56 h-56 lg:w-64 lg:h-64 rounded-full bg-tif-acc-indigo/70 pointer-events-none"
-          />
-          <div
-            aria-hidden="true"
-            className="hidden md:block absolute -top-20 -right-12 w-60 h-60 lg:w-72 lg:h-72 rounded-full bg-tif-secondary/20 pointer-events-none"
-          />
-        </ImagePlaceholder>
+          className="!mt-0 h-56 sm:h-72 md:h-[320px] lg:h-[360px]"
+        />
 
         {/* Stats Card */}
-        <div className="-mt-16 md:-mt-16 z-20 w-[90%] sm:w-4/5 md:w-auto md:min-w-[430px] bg-tif-bg rounded-2xl shadow-[0_12px_40px_rgba(19,35,71,0.08)] px-2 sm:px-6 md:px-8 py-5 md:py-5 flex flex-row items-center justify-between">
+        <div className="-mt-16 md:-mt-16 z-30 w-[90%] sm:w-4/5 md:w-auto md:min-w-[430px] bg-tif-bg rounded-2xl shadow-[0_12px_40px_rgba(19,35,71,0.08)] px-2 sm:px-6 md:px-8 py-5 md:py-5 flex flex-row items-center justify-between">
           {HERO_STATS.map((stat, idx) => (
             <div
               key={stat.labelDesktop}

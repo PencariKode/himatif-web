@@ -67,18 +67,19 @@ export function resolveMemberImages(members = []) {
 }
 
 /**
- * Resolves 5 hero collage images from `public/division/<folder>/hero`:
+ * Resolves 5 hero collage images from `public/<publicSubDir>`:
  * - Index 0 (center hexagon): strictly `1.png` (or null if missing).
- * - Indices 1..4 (side panels): randomly shuffled from other valid images in `hero/`,
+ * - Indices 1..4 (side panels): randomly shuffled from other valid images in the directory,
  *   padded with `null` for any missing slots.
  */
-export function getDivisionHeroImages(folder) {
-  if (!folder) {
+export function getCollageHeroImages(publicSubDir) {
+  if (!publicSubDir) {
     return [null, null, null, null, null];
   }
 
-  const mainImage = resolvePublicImage(`/division/${folder}/hero/1.png`);
-  const dirPath = path.join(process.cwd(), "public", "division", folder, "hero");
+  const cleanSubDir = publicSubDir.replace(/^\/+|\/+$/g, "");
+  const mainImage = resolvePublicImage(`/${cleanSubDir}/1.png`);
+  const dirPath = path.join(process.cwd(), "public", cleanSubDir);
 
   let sideCandidates = [];
   try {
@@ -91,7 +92,7 @@ export function getDivisionHeroImages(folder) {
             IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase()) &&
             entry.name.toLowerCase() !== "1.png"
         )
-        .map((entry) => `/division/${folder}/hero/${entry.name}`);
+        .map((entry) => `/${cleanSubDir}/${entry.name}`);
 
       for (let i = sideCandidates.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -112,6 +113,24 @@ export function getDivisionHeroImages(folder) {
     sideCandidates[2] ?? null,
     sideCandidates[3] ?? null,
   ];
+}
+
+/**
+ * Resolves 5 hero collage images from `public/division/<folder>/hero`.
+ */
+export function getDivisionHeroImages(folder) {
+  if (!folder) {
+    return [null, null, null, null, null];
+  }
+
+  return getCollageHeroImages(`division/${folder}/hero`);
+}
+
+/**
+ * Resolves 5 hero collage images from `public/assets/img/hero`.
+ */
+export function getHomepageHeroImages() {
+  return getCollageHeroImages("assets/img/hero");
 }
 
 /**

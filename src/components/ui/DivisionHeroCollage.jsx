@@ -82,7 +82,7 @@ export default function DivisionHeroCollage({
               {src && (
                 <Image
                   src={src}
-                  alt={`Foto ${slot.label} Divisi ${name}`}
+                  alt={`Foto ${slot.label} ${name}`.trim()}
                   fill
                   priority={slot.priority}
                   sizes={slot.sizes}
