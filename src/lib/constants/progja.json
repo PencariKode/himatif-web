@@ -1,0 +1,679 @@
+{
+  "Badan Pengurus Harian": [
+    {
+      "program_name": "Rapat Koordinasi Anggota",
+      "description": "Rapat bersama dengan seluruh anggota HIMATIF untuk membahas rencana kerja dan strategi pelaksanaan secara online.",
+      "target": "Seluruh anggota HIMATIF",
+      "time_of_program": "1 kali selama satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Aldrik Noel Sianipar", "Cindy Samosir"]
+    },
+    {
+      "program_name": "Rapat Pengurus",
+      "description": "Rapat seluruh pengurus HIMATIF secara rutin untuk membahas masalah-masalah internal organisasi, mengevaluasi pelaksanaan program, dan merencanakan kegiatan-kegiatan mendatang.",
+      "target": "Seluruh pengurus HIMATIF",
+      "time_of_program": "Minimal sekali dalam satu bulan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["M. Ubay Arashy Supo Sembodo", "Putri Sahara Tampubolon"]
+    },
+    {
+      "program_name": "Pelepasan Wisudawan/ti",
+      "description": "Acara penyambutan untuk wisudawan/ti Teknologi Informasi sebagai bentuk apresiasi atas usaha dan pencapaian. Dilakukan dengan sesi foto bersama yang dipandu oleh pengurus.",
+      "target": "Wisudawan/ti Teknologi Informasi",
+      "time_of_program": "Mengikuti kalender akademik USU - Wisuda periode I: minggu ke-4 bulan November 2026 - Wisuda periode II: minggu pertama bulan Februari 2027",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["M. Ubay Arashy Supo Sembodo", "Aldrik Noel Sianipar"]
+    },
+    {
+      "program_name": "Rapat Evaluasi Pengurus Bersama MPK",
+      "description": "Pertemuan seluruh pengurus HIMATIF untuk mengevaluasi program kerja yang sudah dilaksanakan dan membahas persiapan pelaksanaan program kerja yang sudah direncanakan kepada Majelis Penasehat dan Konsultan.",
+      "target": "Seluruh pengurus HIMATIF",
+      "time_of_program": "2 kali dalam satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["M. Ubay Arashy Supo Sembodo", "Anggie Rahmadina Nasution"]
+    },
+    {
+      "program_name": "Odyssey TI 2026",
+      "description": "Program yang menyediakan wadah bagi mahasiswa baru Teknologi Informasi tahun 2026 untuk memahami dunia perkuliahan, kehidupan kampus, serta lingkungan dan seluruh civitas akademika Teknologi Informasi.",
+      "target": "Seluruh mahasiswa/i baru Teknologi Informasi tahun 2026",
+      "time_of_program": "1 kali dalam satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Ilma Mahmudah", "Cindy Samosir"]
+    },
+    {
+      "program_name": "Mengkoordinasi Kesekretariatan",
+      "description": "Menyiapkan segala keperluan administrasi dan surat menyurat yang dibutuhkan HIMATIF.",
+      "target": "Seluruh individu, organisasi, himpunan, ikatan, serta instansi internal dan eksternal kampus",
+      "time_of_program": "Setiap hari selama satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Putri Sahara Tampubolon", "Anggie Rahmadina Nasution"]
+    },
+    {
+      "program_name": "Mengkoordinir Pemasukan dan Pengeluaran HIMATIF",
+      "description": "Mengelola pembukuan keuangan HIMATIF baik dana yang keluar maupun masuk.",
+      "target": "Seluruh individu, organisasi, himpunan, ikatan, maupun badan serta instansi baik internal maupun eksternal kampus",
+      "time_of_program": "Setiap hari selama satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Cindy Samosir", "Ilma Mahmudah"]
+    },
+    {
+      "program_name": "Gathering Pengurus",
+      "description": "Mengadakan kegiatan untuk mengasah kerjasama dan kekompakan antar pengurus HIMATIF.",
+      "target": "Seluruh pengurus HIMATIF Periode 2026/2027",
+      "time_of_program": "Minggu ke-3 bulan Agustus - Minggu ke-1 bulan Desember",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["M. Ubay Arashy Supo Sembodo", "Cindy Samosir"]
+    },
+    {
+      "program_name": "HIMATIF Peduli",
+      "description": "Kegiatan sosial berupa kunjungan ke panti asuhan di Medan dan berpartisipasi dalam penggalangan dana saat bencana alam.",
+      "target": "Anak-anak panti asuhan dan korban bencana alam",
+      "time_of_program": "1 kali dalam satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Putri Sahara Tampubolon", "Ilma Mahmudah"]
+    },
+    {
+      "program_name": "HIMATIF Collaboration",
+      "description": "Bentuk kolaborasi dengan organisasi di bidang IT di seluruh Indonesia melalui kunjungan antar organisasi.",
+      "target": "Seluruh pengurus HIMATIF dan organisasi IT yang akan dikunjungi",
+      "time_of_program": "Minimal 2 kali dalam satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["M. Ubay Arashy Supo Sembodo", "Putri Sahara Tampubolon"]
+    },
+    {
+      "program_name": "Mengawasi Seluruh Divisi HIMATIF",
+      "description": "Mengolah dan meninjau absensi rapat maupun kegiatan tiap divisi, mengevaluasi, dan memberikan empat jenis rekomendasi peringatan, yaitu: 1. Face to Face, 2. Surat Peringatan 1, 3. Surat Peringatan 2, 4. Pemecatan.",
+      "target": "Pengurus HIMATIF Periode 2026-2027",
+      "time_of_program": "Setiap rapat bulanan divisi",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": [
+        "PSDM: M. Ubay Arashy Supo Sembodo",
+        "PSDM: Cindy Samosir",
+        "Olsen: M. Ubay Arashy Supo Sembodo",
+        "Olsen: Anggie Rahmadina Nasution",
+        "Mulkom: Aldrik Noel Sianipar",
+        "Mulkom: Putri Sahara Tampubolon",
+        "Litbang: Aldrik Noel Sianipar",
+        "Litbang: Ilma Mahmudah",
+        "UM: Cindy Samosir",
+        "UM: Ilma Mahmudah",
+        "A. Islam: Putri Sahara Tampubolon",
+        "A. Islam: Anggie Rahmadina Nasution",
+        "A. Kristen: Aldrik Noel Sianipar",
+        "A. Kristen: Cindy Samosir",
+        "A. Buddha: Anggie Rahmadina Nasution",
+        "A. Buddha: Ilma Mahmudah",
+        "Humas: M. Ubay Arashy Supo Sembodo",
+        "Humas: Putri Sahara Tampubolon"
+      ]
+    },
+    {
+      "program_name": "Form Feedback Progja HIMATIF",
+      "description": "Membuat angket penilaian untuk menilai setiap program kerja HIMATIF yang telah dilaksanakan dalam bentuk form online.",
+      "target": "Seluruh pihak yang terlibat dalam pelaksanaan suatu program kerja",
+      "time_of_program": "Dilakukan pada saat satu program kerja telah selesai dilaksanakan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Aldrik Noel Sianipar", "Anggie Rahmadina Nasution"]
+    }
+  ],
+  "Pengembangan Sumber Daya Mahasiswa": [
+    {
+      "program_name": "Campus Life dan Social Building",
+      "description": "Kegiatan pengenalan organisasi dan kehidupan kampus kepada mahasiswa baru Teknologi Informasi.",
+      "target": "Para mahasiswa baru Teknologi Informasi tahun 2026",
+      "time_of_program": "Minggu ke-2 bulan September",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Ghibran Sultan Alfarabi"]
+    },
+    {
+      "program_name": "Pelatihan Kepemimpinan",
+      "description": "Mengadakan kegiatan pelatihan untuk calon pengurus HIMATIF sekaligus sebagai media rekomendasi perekrutan pengurus selanjutnya.",
+      "target": "Mahasiswa Teknologi Informasi yang aktif di tingkat 1 dan 2",
+      "time_of_program": "Minggu ke-4 bulan September",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Mufti Fardan Lubis", "Bintang Pamungkas"]
+    },
+    {
+      "program_name": "Gathering Pengurus",
+      "description": "Mengadakan kegiatan untuk mengasah kerjasama dan kekompakan antar pengurus HIMATIF.",
+      "target": "Seluruh pengurus HIMATIF Periode 2026/2027",
+      "time_of_program": "Minggu ke-1 bulan Oktober - Minggu ke-3 bulan Februari",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Mufti Fardan Lubis", "Tiara Agnesia Br Siahaan"]
+    },
+    {
+      "program_name": "Mystery Event",
+      "description": "Mahasiswa angkatan 2026 membentuk kepanitiaan dan melaksanakan sebuah kegiatan yang sifatnya dirahasiakan sebelum akhirnya diberitahu kepada mahasiswa Teknologi Informasi.",
+      "target": "Mahasiswa Teknologi Informasi yang aktif di tingkat 1, 2, 3 dan 4",
+      "time_of_program": "1 kali dalam satu periode pada minggu ke-2 bulan November",
+      "is_event": true,
+      "is_as_committee": true,
+      "pic": ["Ghibran Sultan Alfarabi"]
+    },
+    {
+      "program_name": "Skill Series",
+      "description": "Ajang bagi mahasiswa agar menjadi wadah untuk mengembangkan dan menunjukkan kemampuan di berbagai bidang softskill. Melalui ajang ini, peserta ditantang untuk mengasah keterampilan komunikasi, berpikir kritis, pemecahan masalah, kerja sama tim, serta kemampuan menganalisis dan menyampaikan ide secara kreatif dan persuasif.",
+      "target": "Mahasiswa Teknologi Informasi yang aktif di tingkat 1 dan 2",
+      "time_of_program": "Minggu ke-3 bulan Oktober",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": [
+        "Tabhita Kristy Silitonga",
+        "Joice Christie Gultom",
+        "Vincent Jose Christian Andreas Simbolon"
+      ]
+    },
+    {
+      "program_name": "Kolabora-TI",
+      "description": "Wadah untuk setiap mahasiswa TI sharing pengetahuan, ide, dan pengalaman baik di akademik dan non-akademik.",
+      "target": "Seluruh mahasiswa Teknologi Informasi",
+      "time_of_program": "Minggu ke-2 bulan Oktober",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Cindy Christina Rajagukguk", "Joice Christie Gultom"]
+    },
+    {
+      "program_name": "HIMATIF Konseling (IT-Menfess)",
+      "description": "Wadah untuk konsultasi mahasiswa/i baru Teknologi Informasi mengenai urusan umum tentang kampus dan perkuliahan.",
+      "target": "Wadah untuk para mahasiswa/i baru Teknologi Informasi USU 2026",
+      "time_of_program": "Selama satu periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Tiara Agnesia Br Siahaan", "Tabhita Kristy Silitonga"]
+    }
+  ],
+  "Penelitian dan Pengembangan": [
+    {
+      "program_name": "HIMATIF Challenge",
+      "description": "Mengadakan Challenge membuat sebuah project yang akan diinformasikan melalui Instagram setiap sebulan sekali. Penilaian challenge dengan Score Board (skor tertinggi) dan akan diambil juara 1, 2, dan 3.",
+      "target": "Mahasiswa/i TI yang mengikuti Instagram HIMATIF",
+      "time_of_program": "1 kali per bulan selama 1 periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Juda Benhur Turnip"]
+    },
+    {
+      "program_name": "Website HIMATIF",
+      "description": "Pengembangan Website HIMATIF.",
+      "target": "Mahasiswa/i TI USU dan semua orang di luar lingkungan TI USU",
+      "time_of_program": "Selama satu periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Daffa Umayans Saragih"]
+    },
+    {
+      "program_name": "IT DISCORD",
+      "description": "Menangani server Discord yang disediakan HIMATIF untuk menjadi suatu wadah komunitas mahasiswa/i TI USU.",
+      "target": "Seluruh mahasiswa/i TI USU",
+      "time_of_program": "Selama satu periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["M Andra Kenzie Sibuea"]
+    },
+    {
+      "program_name": "Learning with HIMATIF",
+      "description": "Mengajarkan materi perkuliahan Teknologi Informasi melalui video yang diunggah di platform YouTube atau Instagram Reels.",
+      "target": "Mahasiswa/i Teknologi Informasi USU",
+      "time_of_program": "1 kali per 3 minggu selama satu periode dimulai Agustus 2026 minggu kedua",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Yeremia Nicolas Purba", "Leondo Admiral Purba"]
+    },
+    {
+      "program_name": "IT Showcase",
+      "description": "Pameran karya mahasiswa/i TI USU yang menampilkan hasil kreasi di bidang teknologi. Setiap pencipta karya akan diberikan waktu sekitar 3 menit untuk presentasi, lalu pengunjung bisa mengeksplorasi setiap karya, dan diakhiri dengan penilaian juri untuk karya terbaik.",
+      "target": "Mahasiswa/i TI aktif Angkatan 2022-2025",
+      "time_of_program": "Desember 2026 minggu pertama",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Muhammad Farhan Praditya Harahap"]
+    },
+    {
+      "program_name": "Seminar Microteaching",
+      "description": "Menyelenggarakan seminar dan sesi microteaching yang membahas teknik presentasi, public speaking, penyampaian materi, serta penyusunan media pembelajaran yang efektif. Salah satu peserta akan diberikan kesempatan untuk mempraktikkan penyampaian materi dan memperoleh evaluasi.",
+      "target": "Mahasiswa/i aktif TI USU",
+      "time_of_program": "Desember 2026 minggu pertama",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Sutanto"]
+    },
+    {
+      "program_name": "IT Competition",
+      "description": "Menyelenggarakan kompetisi IT secara offline yang diikuti oleh mahasiswa/i perguruan tinggi di Sumatera Utara. Peserta akan bekerja dalam tim untuk menyelesaikan studi kasus atau mengembangkan solusi berbasis teknologi dalam waktu yang telah ditentukan. Di akhir kompetisi, setiap tim akan mempresentasikan hasil karyanya di hadapan dewan juri untuk menentukan tim terbaik.",
+      "target": "Mahasiswa/i aktif perguruan tinggi di Sumatera Utara",
+      "time_of_program": "Februari 2027 minggu keempat",
+      "is_event": true,
+      "is_as_committee": true,
+      "pic": [
+        "Jonathan Mulianta Brema Ginting Suka",
+        "Muhammad Farhan Praditya Harahap"
+      ]
+    }
+  ],
+  "Multimedia Komunikasi dan Informasi": [
+    {
+      "program_name": "Himatif Daily on Instagram",
+      "description": "Menghadirkan info harian yang segar dan relevan lewat tema mingguan yang sudah dikurasi: Senin: Informasi Terkini, Rabu: Informasi Edukatif/Akademik, Jumat: Hiburan/Konten Ringan.",
+      "target": "Pengikut akun Instagram Himatif USU (@himatifusu)",
+      "time_of_program": "Rutin setiap minggu selama periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Audrey Syantika", "Aulia Syahfira"]
+    },
+    {
+      "program_name": "Ucapan Hari Besar",
+      "description": "Menyampaikan ucapan resmi dari Himatif melalui Instagram, dipadukan dengan pesan atau pengumuman yang dikemas secara sederhana, jelas, dan tetap menarik.",
+      "target": "Keluarga besar TI USU maupun masyarakat umum",
+      "time_of_program": "Setiap kali ada momen hari besar atau perayaan sepanjang periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Deby Yasmin Nabila", "Mochamad Rizki Agiantoro"]
+    },
+    {
+      "program_name": "Dokumentasi Kegiatan",
+      "description": "Mengabadikan momen-momen kegiatan selama masa kepengurusan dalam bentuk foto dan video secara digital.",
+      "target": "Seluruh kegiatan Himatif USU sepanjang periode kepengurusan",
+      "time_of_program": "Fleksibel",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": [
+        "Ramadiyan Athallah Kusuma",
+        "Deby Yasmin Nabila",
+        "Audrey Syantika"
+      ]
+    },
+    {
+      "program_name": "Himatif on Youtube",
+      "description": "Media informasi untuk menyampaikan berita, hiburan, serta kegiatan internal kampus Teknologi Informasi.",
+      "target": "Seluruh Mahasiswa/i TI USU",
+      "time_of_program": "Fleksibel",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Yosia Marcel Koreshy Simanjuntak", "Ramadiyan Athallah Kusuma"]
+    },
+    {
+      "program_name": "Pengelolaan Media Sosial",
+      "description": "Mengendalikan dan mengurus akun media sosial Himatif, diantaranya Instagram, Twitter, WhatsApp dan Youtube.",
+      "target": "Seluruh mahasiswa/i TI dan umum (pengikut) akun media sosial Himatif",
+      "time_of_program": "Fleksibel",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": [
+        "Jevine Jeje Zakarias Simanjuntak",
+        "Yosia Marcel Koreshy Simanjuntak"
+      ]
+    },
+    {
+      "program_name": "Himatif Live on Instagram",
+      "description": "Media untuk menyampaikan informasi sekaligus menghadirkan hiburan bagi audiens.",
+      "target": "Mahasiswa/i TI USU",
+      "time_of_program": "1 kali setiap 2 bulan selama satu periode (Fleksibel)",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Mochamad Rizki Agiantoro", "Aulia Syahfira"]
+    }
+  ],
+  "Olahraga dan Seni": [
+    {
+      "program_name": "Fun & Fit",
+      "description": "Fun & Fit merupakan kegiatan berolahraga santai bersama keluarga besar Teknologi Informasi (Badminton, Futsal, Pickle Ball).",
+      "target": "Keluarga besar mahasiswa/i Teknologi Informasi, baik itu mahasiswa/i aktif maupun alumni",
+      "time_of_program": "Minggu Ke-2 September 2026",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Muhammad Dzakwan Ismail Rangkuti", "M. Hasbi Zahy Rabbani"]
+    },
+    {
+      "program_name": "HSL (Himatif Sports Link)",
+      "description": "HSL adalah pertandingan futsal, basket, dan badminton antar tim setiap angkatan.",
+      "target": "Seluruh mahasiswa Teknologi Informasi",
+      "time_of_program": "Minggu ke-1 Oktober 2026",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": [
+        "Mar'ie Rizqullah",
+        "Muhammad Fakhry Adrian Daulay",
+        "Syamil Mali Uzair",
+        "Gabriel Saurman Parhusip",
+        "Felix Desselo Tambunan"
+      ]
+    },
+    {
+      "program_name": "IT Sports Club",
+      "description": "IT Sports Club merupakan komunitas pelatihan yang dapat mengembangkan minat dan bakat mahasiswa/i Teknologi Informasi di bidang olahraga sekaligus untuk memupuk kebersamaan dalam setiap agenda latihan rutin dan pertemuan.",
+      "target": "Mahasiswa Aktif Teknologi Informasi",
+      "time_of_program": "1x dalam seminggu, dimulai pada minggu ke-3 bulan September 2026 (selama HSL IT Sports ditiadakan)",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": [
+        "Basket: Felix Desselo Tambunan",
+        "Futsal: Gabriel Saurman Parhusip",
+        "Badminton: Muhammad Fakhry Adrian Daulay"
+      ]
+    },
+    {
+      "program_name": "IT Band",
+      "description": "IT Band merupakan komunitas pelatihan yang dapat mengembangkan minat dan bakat mahasiswa/i Teknologi Informasi di bidang seni khususnya musik sekaligus untuk memupuk kebersamaan dan juga mewakili HIMATIF untuk setiap event musik, dengan agenda latihan, pertemuan, dan hasil output rutin berupa recording yang nantinya akan diupload ke Media Sosial Himatif.",
+      "target": "Mahasiswa/i aktif Teknologi Informasi",
+      "time_of_program": "1x dalam 2 minggu, dimulai pada minggu ke-3 bulan September 2026 (selama HSL IT Band ditiadakan)",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Muhammad Vasha Nadar"]
+    },
+    {
+      "program_name": "IT Esport",
+      "description": "IT Esport merupakan komunitas pelatihan yang dapat mengembangkan minat dan bakat mahasiswa/i Teknologi Informasi di bidang Esport.",
+      "target": "Mahasiswa/i aktif Teknologi Informasi",
+      "time_of_program": "1x dalam seminggu, dimulai pada minggu ke-3 bulan September 2026 (selama HSL IT Esport ditiadakan)",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": [
+        "Mobile Legend: Rio Febrian Samuel Naibaho",
+        "Tekken 8: Farrel Reza Saputra",
+        "FIFA & E-Football: Cinta Pardame Sihaloho",
+        "MCGG: Syamil Mali Uzair"
+      ]
+    },
+    {
+      "program_name": "HITEC (HIMATIF Esports Competition)",
+      "description": "HITEC merupakan kompetisi Mobile Legend, Valorant, dan Tekken 8 yang terbuka untuk umum.",
+      "target": "Masyarakat umum, khususnya yang memiliki minat pada esports",
+      "time_of_program": "Dimulai pada minggu ke-2 bulan Desember 2026",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": [
+        "Muhammad Vasha Nadar",
+        "Alham Sarosi Saragih",
+        "Cinta Pardame Sihaloho",
+        "Rio Febrian Samuel Naibaho",
+        "Farrel Reza Saputra"
+      ]
+    },
+    {
+      "program_name": "IT Jam & Art",
+      "description": "IT Jam adalah kegiatan hiburan di mana mahasiswa Teknologi Informasi berkumpul untuk menyanyi lagu-lagu favorit mereka dengan iringan musik instrumental.",
+      "target": "Mahasiswa/i aktif, alumni Teknologi Informasi, juga diharapkan masyarakat umum",
+      "time_of_program": "Minggu ke-2 Maret 2026",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Gracia Tri ErGladys Simatupang", "Muhammad Vasha Nadar"]
+    }
+  ],
+  "Usaha Mandiri": [
+    {
+      "program_name": "Penjualan PDH HIMATIF",
+      "description": "Membuat baju, velcro tape (sesuai tahun kepengurusan) dan membuat atribut nama sesuai data anggota himpunan.",
+      "target": "Seluruh anggota HIMATIF",
+      "time_of_program": "1x dalam satu periode Bulan Agustus – Oktober",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Rasyiqah Amalina Putri"]
+    },
+    {
+      "program_name": "Himatif Store",
+      "description": "Menjual hadiah dan barang-barang untuk berbagai acara ataupun pribadi seperti crochet bouquet, banner, boneka crochet, briefcase laptop.",
+      "target": "Mahasiswa/i TI USU dan semua orang di luar lingkungan TI USU",
+      "time_of_program": "Selama periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Anggun Dwikasih Mahrani Harahap"]
+    },
+    {
+      "program_name": "Himatif Merchandise",
+      "description": "Menjual totebag, gantungan kunci, dan stiker yang didesain oleh HIMATIF dengan sistem PO dan Ready.",
+      "target": "Mahasiswa/i TI USU dan umum",
+      "time_of_program": "Selama periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Jihan Fadhilah"]
+    },
+    {
+      "program_name": "Himatif Corner UMKM",
+      "description": "Mengajak mahasiswa/i USU pemilik UMKM untuk berkolaborasi bersama guna mengembangkan usaha dengan menjual produk mereka di stand HIMATIF yang dibuka saat kegiatan offline, sekaligus menjual produk Divisi Usaha Mandiri dan berbagai makanan ringan.",
+      "target": "Mahasiswa/i yang memiliki UMKM mau bekerja sama dengan HIMATIF dan secara aktif berpartisipasi pada program kerja HIMATIF lainnya",
+      "time_of_program": "2x/minggu dan di setiap kegiatan offline HIMATIF selama periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Qeizha Aleesha Zyva"]
+    },
+    {
+      "program_name": "Partnership",
+      "description": "Bekerja sama dengan perusahaan/instansi/vendor yang berpotensi untuk menjadi sponsor di kegiatan HIMATIF agar perusahaan/instansi/vendor tersebut dapat memfasilitasi kegiatan-kegiatan HIMATIF.",
+      "target": "Instansi/Perusahaan",
+      "time_of_program": "Selama periode kepengurusan",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Chaterine Eklesia Maryati"]
+    },
+    {
+      "program_name": "HIMATIF Craft",
+      "description": "HIMATIF Craft merupakan program workshop kreatif yang memberikan kesempatan kepada mahasiswa untuk membuat berbagai kerajinan tangan (handmade) seperti gelang manik, cushion, holder, serta kerajinan kreatif lainnya.",
+      "target": "Mahasiswa/i TI USU yang tertarik mengikuti workshop kreatif",
+      "time_of_program": "1x dalam satu periode kepengurusan",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Faridhah 'Izzati Hasanah Hasugian"]
+    }
+  ],
+  "Rohani Islam": [
+    {
+      "program_name": "Infaq TI",
+      "description": "Kegiatan donasi/infaq yang dilaksanakan khusus di lingkungan Teknologi Informasi.",
+      "target": "Mahasiswa aktif muslim di lingkungan Teknologi Informasi",
+      "time_of_program": "Setiap minggu pada hari Jumat",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Qairsya Naurel Ein Yaliki", "Ratu Sabrina Turnip"]
+    },
+    {
+      "program_name": "HIMATIF Charity",
+      "description": "Kegiatan amal berbagi ke panti asuhan dengan memberikan bantuan berupa barang/bahan makanan kepada anak yatim.",
+      "target": "Panti asuhan di sekitar USU",
+      "time_of_program": "Satu kali dalam keperiodean",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Muhammad Lukman Toro", "Dhaifina Raiqa Zahira"]
+    },
+    {
+      "program_name": "Muslim TI USU",
+      "description": "Media informasi yang menyajikan konten islami sekaligus kuis interaktif mingguan secara berkala. Ig: @muslimtiusu",
+      "target": "Mahasiswa/i muslim aktif Teknologi Informasi",
+      "time_of_program": "Sekali dalam seminggu",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Ratu Sabrina Turnip", "Daradira Vonna"]
+    },
+    {
+      "program_name": "HIKMAH TI",
+      "description": "Tabligh akbar untuk menjalin silaturahmi yang dirangkaikan dengan kompetisi seni islami sebagai wadah kreativitas mahasiswa.",
+      "target": "Seluruh mahasiswa Teknologi Informasi",
+      "time_of_program": "Satu kali dalam keperiodean",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Lisdanoviati", "Muhammad Lukman Toro"]
+    },
+    {
+      "program_name": "Kajian Islam TI (KALAM TI)",
+      "description": "Kajian atau studi yang berhubungan dengan Islam, Fiqih, dan beberapa pemahaman Islam.",
+      "target": "Mahasiswa/i aktif Teknologi Informasi",
+      "time_of_program": "1 kali dalam keperiodean",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Qairsya Naurel Ein Yaliki", "Dhaifina Raiqa Zahira"]
+    },
+    {
+      "program_name": "Buka Bersama TI (BUKBER TI)",
+      "description": "Kegiatan buka puasa bersama yang diselenggarakan untuk mempererat silaturahmi dan kebersamaan antaranggota.",
+      "target": "Anggota himpunan dan mahasiswa Teknologi Informasi",
+      "time_of_program": "1 kali pada bulan Ramadan (menyesuaikan kalender Hijriah)",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Daradira Vonna", "Lisdanoviati"]
+    }
+  ],
+  "Rohani Kristen": [
+    {
+      "program_name": "Perayaan Natal Teknologi Informasi USU",
+      "description": "Acara perayaan Natal bersama keluarga besar jurusan Teknologi Informasi.",
+      "target": "Seluruh mahasiswa/i Teknologi Informasi",
+      "time_of_program": "Minggu ke-2 bulan Desember",
+      "is_event": true,
+      "is_as_committee": true,
+      "pic": ["Kevin Rodriguez", "Royceana Silaban"]
+    },
+    {
+      "program_name": "Christian Student of Information Technology Day (CSoIT Day)",
+      "description": "Acara penyambutan mahasiswa Kristen Teknologi Informasi 2026.",
+      "target": "Keluarga besar mahasiswa Kristen TI, baik itu alumni dan mahasiswa",
+      "time_of_program": "Minggu ke-4 bulan Oktober",
+      "is_event": true,
+      "is_as_committee": true,
+      "pic": ["Farel Yamotaro Hia", "Royceana Silaban"]
+    },
+    {
+      "program_name": "Pendataan Mahasiswa Aktif Kristen Teknologi Informasi",
+      "description": "Untuk mendata mahasiswa/i aktif Kristen TI.",
+      "target": "Seluruh mahasiswa/i Kristiani Angkatan 2023-2026",
+      "time_of_program": "1 kali dalam satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Debora Tampubolon", "Farel Yamotaro Hia"]
+    },
+    {
+      "program_name": "Pengelolaan Konten Media Sosial",
+      "description": "Mengelola seluruh sosial media CSoIT seperti YouTube dan Instagram beserta konten di dalamnya seperti ucapan selamat ulang tahun, dukacita, wisuda serta dokumentasi dalam kegiatan Kristen lainnya seperti Natal dan CSoIT.",
+      "target": "Seluruh keluarga besar mahasiswa/i Kristen TI dan publik",
+      "time_of_program": "1 kali dalam satu periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Kevin Rodriguez"]
+    },
+    {
+      "program_name": "Iuran Mahasiswa Kristen Teknologi Informasi",
+      "description": "Iuran wajib Rp5.000 per bulan bagi setiap anggota HIMATIF beragama Kristen angkatan 2023-2026.",
+      "target": "Seluruh Mahasiswa/i Kristen aktif Angkatan 2023-2026",
+      "time_of_program": "1 kali sebulan selama periode",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Debora Tampubolon"]
+    },
+    {
+      "program_name": "Ibadah Keluarga Besar Teknologi Informasi",
+      "description": "Acara peribadatan yang diikuti oleh mahasiswa aktif dan alumni Teknologi Informasi.",
+      "target": "Keluarga besar Kristen Teknologi Informasi",
+      "time_of_program": "1 kali dalam satu periode",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Kevin Rodriguez", "Farel Yamotaro Hia"]
+    },
+    {
+      "program_name": "Fellowship Information Technology",
+      "description": "Acara peribadatan yang diikuti oleh mahasiswa aktif Teknologi Informasi.",
+      "target": "Seluruh Mahasiswa/i Kristen aktif angkatan 2023-2026",
+      "time_of_program": "2 kali dalam satu periode",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Debora Tampubolon", "Royceana Silaban"]
+    }
+  ],
+  "Rohani Buddha": [
+    {
+      "program_name": "Kebaktian Buddha",
+      "description": "Kebaktian dengan HIMATIF Buddha, baik kebaktian biasa maupun hari besar Agama Buddha.",
+      "target": "Seluruh mahasiswa/i Buddhis TI",
+      "time_of_program": "Satu bulan sekali dan pada perayaan hari besar Agama Buddha",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Charles"]
+    },
+    {
+      "program_name": "Buddhist Gathering",
+      "description": "Pertemuan secara rutin untuk diskusi sekalian sharing antara mahasiswa/i Buddhis TI.",
+      "target": "Seluruh mahasiswa/i Buddhis TI",
+      "time_of_program": "Dua bulan sekali",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Shelly"]
+    },
+    {
+      "program_name": "Makrab",
+      "description": "Acara mempertemukan senior ataupun alumni yang beragama Buddha dengan mahasiswa baru dengan tujuan mendekatkan diri antara kedua belah pihak.",
+      "target": "Seluruh mahasiswa/i Buddhis TI",
+      "time_of_program": "Oktober",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Darren Wangsa"]
+    }
+  ],
+  "Hubungan Masyarakat": [
+    {
+      "program_name": "Himatif Partnership",
+      "description": "Partnership & Collaboration merupakan program kerja yang berfokus pada pengembangan dan penguatan kerja sama antara HIMATIF dengan komunitas, perusahaan, startup, media partner, organisasi mahasiswa, maupun lembaga eksternal lainnya.",
+      "target": "Perusahaan di bidang teknologi maupun non-teknologi, Startup lokal maupun nasional",
+      "time_of_program": "1 Periode 2026/2027",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Dian Indriani", "Quinsha Ilmi"]
+    },
+    {
+      "program_name": "HIMATIF CAREER",
+      "description": "HIMATIF CAREER merupakan program kerja yang menghadirkan alumni Teknologi Informasi sebagai narasumber untuk berbagi pengalaman, wawasan, dan strategi dalam mempersiapkan karier di dunia profesional. Kegiatan ini membahas pengembangan personal branding, penyusunan CV dan portofolio, persiapan magang maupun kerja, serta tips menghadapi proses rekrutmen agar mahasiswa lebih siap memasuki dunia industri.",
+      "target": "Mahasiswa Teknologi Informasi, Alumni Teknologi Informasi, Mahasiswa yang sedang mempersiapkan magang maupun dunia kerja",
+      "time_of_program": "Desember 2026",
+      "is_event": true,
+      "is_as_committee": false,
+      "pic": ["Quinsha Ilmi", "Keizya Azalea"]
+    },
+    {
+      "program_name": "Himatif Collaboration",
+      "description": "Dipandu oleh pengurus, HIMATIF Collaboration merupakan program kerja yang bertujuan membangun kolaborasi antara HIMATIF dengan organisasi mahasiswa internal maupun eksternal, komunitas teknologi, instansi, perusahaan, dan pihak lainnya melalui kegiatan bersama seperti seminar, workshop, pelatihan, webinar, kompetisi, pengabdian masyarakat, studi banding, maupun proyek kolaboratif.",
+      "target": "Mahasiswa Teknologi Informasi, sivitas akademika Universitas, organisasi mahasiswa, komunitas, mitra industri, alumni, serta masyarakat umum",
+      "time_of_program": "Februari 2027",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Novita Barti", "Keizya Azalea"]
+    },
+    {
+      "program_name": "Himatif Podcast",
+      "description": "Himatif Podcast merupakan program kerja yang menghadirkan konten audio maupun video berupa diskusi, wawancara, dan sharing session mengenai teknologi, akademik, organisasi, karier, serta isu-isu terkini bersama dosen, alumni, mahasiswa berprestasi, praktisi, maupun narasumber lainnya.",
+      "target": "Mahasiswa Teknologi Informasi, Mahasiswa Universitas Sumatera Utara, Alumni, Dosen, Pelajar dan masyarakat umum yang tertarik pada bidang teknologi",
+      "time_of_program": "September 2026 - Januari 2027",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Jona Vebrian", "Nadine Tantiara"]
+    },
+    {
+      "program_name": "Himatif Goes To School",
+      "description": "HIMATIF Goes to School merupakan program kerja yang bertujuan memperkenalkan Program Studi Teknologi Informasi, HIMATIF, serta dunia teknologi kepada siswa SMA/SMK sederajat melalui kegiatan sosialisasi, seminar, workshop, sharing session, maupun pelatihan dasar di bidang teknologi informasi.",
+      "target": "Siswa SMA/SMK/MA sederajat, Guru Bimbingan Konseling (BK) dan tenaga pendidik, Organisasi siswa (OSIS) atau ekstrakurikuler di sekolah, Sekolah mitra di tingkat SMA/SMK sederajat",
+      "time_of_program": "Februari 2027",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Dian Indriani", "Novita Barti"]
+    },
+    {
+      "program_name": "Himatif Channel",
+      "description": "Himatif Channel merupakan program kerja Divisi Humas yang berfungsi sebagai media komunikasi dan penyebaran informasi resmi himpunan melalui fitur WhatsApp Channel.",
+      "target": "Seluruh mahasiswa Program Studi Teknologi Informasi, khususnya anggota Himpunan Mahasiswa Teknologi Informasi (HIMATIF)",
+      "time_of_program": "1 Periode 2026/2027",
+      "is_event": false,
+      "is_as_committee": false,
+      "pic": ["Seluruh anggota Humas"]
+    }
+  ]
+}
