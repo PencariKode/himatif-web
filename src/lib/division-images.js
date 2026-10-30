@@ -72,7 +72,7 @@ export function resolveMemberImages(members = []) {
  * - Indices 1..4 (side panels): randomly shuffled from other valid images in the directory,
  *   padded with `null` for any missing slots.
  */
-export function getCollageHeroImages(publicSubDir) {
+export function getCollageHeroImages(publicSubDir, excludePattern = null) {
   if (!publicSubDir) {
     return [null, null, null, null, null];
   }
@@ -90,7 +90,8 @@ export function getCollageHeroImages(publicSubDir) {
           (entry) =>
             entry.isFile() &&
             IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase()) &&
-            entry.name.toLowerCase() !== "1.png"
+            entry.name.toLowerCase() !== "1.png" &&
+            (!excludePattern || !excludePattern.test(entry.name))
         )
         .map((entry) => `/${cleanSubDir}/${entry.name}`);
 
@@ -130,7 +131,7 @@ export function getDivisionHeroImages(folder) {
  * Resolves 5 hero collage images from `public/assets/img/hero`.
  */
 export function getHomepageHeroImages() {
-  return getCollageHeroImages("assets/img/hero");
+  return getCollageHeroImages("assets/img/hero", /^g[123]\./i);
 }
 
 /**

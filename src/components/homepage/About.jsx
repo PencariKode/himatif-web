@@ -1,25 +1,36 @@
+import Image from "next/image";
 import { MISI_LIST } from "@l/constants";
+import { resolvePublicImage } from "@l/division-images";
 import ImagePlaceholder from "@c/ui/ImagePlaceholder";
 import { EyebrowTag, SectionContainer } from "@c/ui/SectionWrapper";
 
 const ABOUT_CARDS = [
   {
     id: "left",
+    alt: "Dokumentasi Kegiatan HIMATIF Kiri",
+    image: "/assets/img/hero/g2.png",
     bgClass: "bg-tif-acc-bluesky",
     layoutClass:
       "order-2 md:order-1 w-[calc(50%-6px)] md:w-1/4 h-32 sm:h-40 md:h-44",
+    sizes: "(max-width: 768px) 50vw, 25vw",
   },
   {
     id: "center",
+    alt: "Dokumentasi Kegiatan Utama HIMATIF",
+    image: "/assets/img/hero/g1.png",
     bgClass: "bg-tif-acc-sand",
     layoutClass:
       "order-1 md:order-2 w-full md:w-2/4 h-48 sm:h-60 md:h-64",
+    sizes: "(max-width: 768px) 100vw, 50vw",
   },
   {
     id: "right",
+    alt: "Dokumentasi Kegiatan HIMATIF Kanan",
+    image: "/assets/img/hero/g3.png",
     bgClass: "bg-tif-acc-cream",
     layoutClass:
       "order-3 w-[calc(50%-6px)] md:w-1/4 h-32 sm:h-40 md:h-44",
+    sizes: "(max-width: 768px) 50vw, 25vw",
   },
 ];
 
@@ -45,12 +56,25 @@ export default function About() {
 
       {/* 3 Photo Cards Showcase (Responsive Flexbox with order) */}
       <div className="mt-10 md:mt-11 flex flex-row flex-wrap md:flex-nowrap items-center justify-between gap-3 md:gap-5 w-full">
-        {ABOUT_CARDS.map((card) => (
-          <ImagePlaceholder
-            key={card.id}
-            className={`${card.bgClass} ${card.layoutClass}`}
-          />
-        ))}
+        {ABOUT_CARDS.map((card) => {
+          const src = resolvePublicImage(card.image);
+          return (
+            <ImagePlaceholder
+              key={card.id}
+              className={`${card.bgClass} ${card.layoutClass}`}
+            >
+              {src && (
+                <Image
+                  src={src}
+                  alt={card.alt}
+                  fill
+                  sizes={card.sizes}
+                  className="object-cover object-center"
+                />
+              )}
+            </ImagePlaceholder>
+          );
+        })}
       </div>
 
       {/* Visi & Misi Row */}
