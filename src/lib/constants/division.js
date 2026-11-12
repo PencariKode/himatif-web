@@ -138,7 +138,7 @@ export const DIVISI_LIST = [
       { name: "Anggun Dwikasih Mahrani Harahap", nim: "241402018" },
       { name: "Chaterine Eklesia Maryati", nim: "241402123" },
       { name: "Qeizha Aleesha Zyva", nim: "251404054" },
-      { name: "Jihan Fadhilah", nim: "241402098" },
+      { name: "Jihan Fadhilah", nim: "251402098" },
     ],
   },
   {
